@@ -1,0 +1,21 @@
+# Nuxt
+.nuxt
+.output
+.env
+dist
+
+# Node
+node_modules
+*.log*
+.DS_Store
+
+# IDEs
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Project files
+*.pdf
