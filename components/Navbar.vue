@@ -4,28 +4,19 @@
       'fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out',
       scrolled
         ? 'bg-secondary/95 backdrop-blur-lg shadow-2xl mx-6 mt-6 rounded-2xl border border-white/10'
-        : 'bg-transparent'
+        : 'bg-white/95 backdrop-blur-sm shadow-md'
     )"
   >
     <div :class="cn('container mx-auto flex items-center justify-between h-20 px-6 transition-all duration-500')">
-      <NuxtLink to="/" class="flex items-center gap-3 group">
-        <div
+      <NuxtLink to="/" class="flex items-center group">
+        <img
+          src="/enprodes.webp"
+          alt="Enprodes"
           :class="cn(
-            'h-12 w-12 rounded-xl flex items-center justify-center transition-all duration-500',
-            scrolled
-              ? 'bg-white/10 border-2 border-white/20'
-              : 'bg-primary/10 border-2 border-primary/20'
+            'h-10 w-auto transition-all duration-500',
+            scrolled ? 'brightness-0 invert' : ''
           )"
-        >
-          <span
-            :class="cn(
-              'text-xl font-bold transition-all duration-500',
-              scrolled ? 'text-white' : 'text-primary'
-            )"
-          >
-            LOGO
-          </span>
-        </div>
+        />
       </NuxtLink>
 
       <nav class="hidden md:flex items-center gap-1">
@@ -35,7 +26,7 @@
           variant="ghost"
           as-child
           :class="cn(
-            'transition-all duration-300',
+            'transition-all duration-300 font-light',
             scrolled
               ? 'text-white/90 hover:bg-white/10 hover:text-white'
               : 'hover:bg-accent hover:text-accent-foreground'
@@ -50,7 +41,7 @@
       <div class="hidden md:flex items-center gap-4">
         <Button
           :class="cn(
-            'transition-all duration-300',
+            'transition-all duration-300 font-light',
             scrolled
               ? 'bg-white text-secondary hover:bg-white/90'
               : 'bg-primary text-primary-foreground hover:bg-primary/90'
@@ -98,7 +89,7 @@
             as-child
             class="w-full justify-start"
             :class="cn(
-              'transition-all duration-300',
+              'transition-all duration-300 font-light',
               scrolled
                 ? 'text-white/90 hover:bg-white/10 hover:text-white'
                 : ''
@@ -114,7 +105,7 @@
             <Button
               class="w-full"
               :class="cn(
-                'transition-all duration-300',
+                'transition-all duration-300 font-light',
                 scrolled
                   ? 'bg-white text-secondary hover:bg-white/90'
                   : 'bg-primary hover:bg-primary/90'

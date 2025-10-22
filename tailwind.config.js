@@ -51,14 +51,13 @@ module.exports = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
-        // Cores customizadas da Enprodes
         enprodes: {
-          gold: '#8B7355',
-          'gold-light': '#A08968',
-          'gold-dark': '#6B5842',
-          gray: '#404040',
-          'gray-light': '#666666',
-          'gray-dark': '#2A2A2A',
+          orange: '#f67031',
+          'orange-light': '#ff8c5a',
+          'orange-dark': '#d95a1f',
+          gray: '#666666',
+          'gray-light': '#888888',
+          'gray-dark': '#444444',
         },
       },
       borderRadius: {
