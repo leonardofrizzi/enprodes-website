@@ -40,14 +40,18 @@
 
       <div class="hidden md:flex items-center gap-4">
         <Button
+          as-child
           :class="cn(
             'transition-all duration-300 font-light',
             scrolled
-              ? 'bg-white text-secondary hover:bg-white/90'
-              : 'bg-primary text-primary-foreground hover:bg-primary/90'
+              ? 'bg-white text-secondary hover:bg-white/80'
+              : 'bg-enprodes-orange text-white hover:bg-enprodes-orange-dark'
           )"
         >
-          Contato
+          <a href="mailto:contato@enprodes.com.br" class="flex items-center gap-2">
+            <Mail class="h-4 w-4" />
+            <span class="text-sm">contato@enprodes.com.br</span>
+          </a>
         </Button>
       </div>
 
@@ -103,15 +107,19 @@
 
           <div class="pt-2">
             <Button
+              as-child
               class="w-full"
               :class="cn(
                 'transition-all duration-300 font-light',
                 scrolled
-                  ? 'bg-white text-secondary hover:bg-white/90'
-                  : 'bg-primary hover:bg-primary/90'
+                  ? 'bg-white text-secondary hover:bg-white/80'
+                  : 'bg-enprodes-orange text-white hover:bg-enprodes-orange-dark'
               )"
             >
-              Contato
+              <a href="mailto:contato@enprodes.com.br" class="flex items-center justify-center gap-2">
+                <Mail class="h-4 w-4" />
+                <span class="text-sm">contato@enprodes.com.br</span>
+              </a>
             </Button>
           </div>
         </div>
@@ -122,7 +130,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
-import { Menu, X } from 'lucide-vue-next'
+import { Menu, X, Mail } from 'lucide-vue-next'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 

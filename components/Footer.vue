@@ -32,8 +32,8 @@
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/clientes" class="text-white/70 hover:text-white font-light transition-colors">
-                Clientes
+              <NuxtLink to="/trabalhe-conosco" class="text-white/70 hover:text-white font-light transition-colors">
+                Trabalhe Conosco
               </NuxtLink>
             </li>
             <li>
@@ -47,10 +47,26 @@
         <div>
           <h3 class="text-lg font-light mb-4">Serviços</h3>
           <ul class="space-y-3">
-            <li class="text-white/70 font-light">Mobilidade</li>
-            <li class="text-white/70 font-light">Smart Cities</li>
-            <li class="text-white/70 font-light">Indústrias</li>
-            <li class="text-white/70 font-light">Projetos de Engenharia</li>
+            <li>
+              <NuxtLink to="/servicos/smart-cities" class="text-white/70 hover:text-white font-light transition-colors">
+                Smart Cities
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/servicos/projetos-engenharia" class="text-white/70 hover:text-white font-light transition-colors">
+                Projetos de Engenharia
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/servicos/tuneis" class="text-white/70 hover:text-white font-light transition-colors">
+                Túneis
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/servicos/pedagios" class="text-white/70 hover:text-white font-light transition-colors">
+                Pedágios
+              </NuxtLink>
+            </li>
           </ul>
         </div>
 
@@ -69,7 +85,12 @@
     <div class="border-t border-white/10">
       <div class="container mx-auto px-6 py-6">
         <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-white/50 text-sm font-light">
-          <p>© {{ new Date().getFullYear() }} Enprodes. Todos os direitos reservados.</p>
+          <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+            <p>© {{ new Date().getFullYear() }} Enprodes. Todos os direitos reservados.</p>
+            <NuxtLink to="/politica-privacidade" class="hover:text-white transition-colors">
+              Política de Privacidade
+            </NuxtLink>
+          </div>
           <p>enprodes.com.br</p>
         </div>
       </div>

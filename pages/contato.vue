@@ -10,7 +10,8 @@
             </p>
           </div>
 
-          <div class="grid md:grid-cols-2 gap-12">
+          <!-- Form Section -->
+          <div class="grid md:grid-cols-2 gap-12 mb-24">
             <div>
               <h2 class="text-4xl font-light mb-6">Envie uma mensagem</h2>
               <form class="space-y-6">
@@ -41,103 +42,44 @@
             </div>
 
             <div>
-              <div class="flex items-center justify-between mb-6">
-                <h2 class="text-4xl font-light">Nossos Escritórios</h2>
-                <button
-                  v-if="selectedCountry !== 'world'"
-                  @click="resetToWorldMap"
-                  class="text-sm text-enprodes-orange hover:text-enprodes-orange-dark font-light flex items-center gap-2"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M19 12H5M12 19l-7-7 7-7"/>
-                  </svg>
-                  Voltar ao mapa mundial
-                </button>
+              <div class="relative h-full min-h-[500px] rounded-2xl bg-muted/20 border flex items-center justify-center">
+                <p class="text-muted-foreground font-light">Imagem: Escritório ou equipe</p>
               </div>
+            </div>
+          </div>
 
-              <div class="relative h-96 rounded-2xl border bg-muted/10 mb-8 p-4 overflow-hidden">
-                <transition name="fade" mode="out-in">
-                  <div v-if="selectedCountry === 'world'" key="world" class="relative w-full h-full">
-                    <SvgMap
-                      :map="World"
-                      @mouseover="handleLocationMouseOver"
-                      @mouseout="handleLocationMouseOut"
-                      @click="handleLocationClick"
-                      class="w-full h-full"
-                    />
-                  </div>
-                  <div v-else-if="selectedCountry === 'br'" key="brazil" class="relative w-full h-full">
-                    <SvgMap
-                      :map="Brazil"
-                      @mouseover="handleLocationMouseOver"
-                      @mouseout="handleLocationMouseOut"
-                      @click="handleBrazilLocationClick"
-                      class="w-full h-full"
-                    />
-                    <div
-                      v-for="office in brazilianOffices"
-                      :key="office.city"
-                      class="absolute pointer-events-none"
-                      :style="{
-                        left: office.x + '%',
-                        top: office.y + '%',
-                        transform: 'translate(-50%, -100%)'
-                      }"
-                    >
-                      <div class="relative">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-8 w-8 drop-shadow-lg transition-all duration-300"
-                          :class="hoveredOffice === office.city ? 'h-10 w-10' : 'h-8 w-8'"
-                          viewBox="0 0 24 24"
-                          fill="#f67031"
-                          stroke="#ffffff"
-                          stroke-width="1"
-                        >
-                          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                          <circle cx="12" cy="10" r="3" fill="#ffffff"/>
-                        </svg>
-                        <div
-                          v-if="hoveredOffice === office.city"
-                          class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 whitespace-nowrap bg-white px-3 py-1 rounded-lg shadow-lg border-2 border-enprodes-orange"
-                        >
-                          <p class="text-sm font-light text-gray-900">{{ office.city }}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div v-else key="country" class="relative w-full h-full">
-                    <SvgMap
-                      :map="World"
-                      @mouseover="handleLocationMouseOver"
-                      @mouseout="handleLocationMouseOut"
-                      class="w-full h-full"
-                    />
-                  </div>
-                </transition>
-              </div>
+          <!-- Offices Section -->
+          <div>
+            <h2 class="text-4xl font-light mb-12 text-center">Nossos Escritórios</h2>
 
-              <div class="grid gap-4">
-                <div
-                  v-for="office in offices"
-                  :key="office.city"
-                  class="p-6 rounded-2xl border bg-card hover:shadow-lg transition-all cursor-pointer"
-                  @click="handleOfficeClick(office)"
-                  @mouseenter="hoveredOffice = office.city"
-                  @mouseleave="hoveredOffice = null"
-                  :class="{ 'ring-2 ring-enprodes-orange': hoveredOffice === office.city }"
-                >
-                  <div class="flex items-start gap-4">
-                    <div class="h-10 w-10 rounded-full bg-enprodes-orange/10 flex items-center justify-center flex-shrink-0">
-                      <MapPin class="h-5 w-5 text-enprodes-orange" />
-                    </div>
-                    <div class="space-y-1">
-                      <h3 class="font-light text-lg">{{ office.city }}</h3>
-                      <p class="text-sm text-muted-foreground font-light">{{ office.country }}</p>
-                    </div>
-                  </div>
+            <!-- Office Cards -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+              <div
+                v-for="office in offices"
+                :key="office.city"
+                class="p-6 rounded-2xl border bg-card hover:shadow-lg transition-all cursor-pointer text-center"
+                @click="selectedOffice = office"
+                :class="{ 'ring-2 ring-enprodes-orange': selectedOffice?.city === office.city }"
+              >
+                <div class="h-12 w-12 rounded-full bg-enprodes-orange/10 flex items-center justify-center mx-auto mb-4">
+                  <MapPin class="h-6 w-6 text-enprodes-orange" />
                 </div>
+                <h3 class="font-light text-lg mb-1">{{ office.city }}</h3>
+                <p class="text-sm text-muted-foreground font-light">{{ office.country }}</p>
               </div>
+            </div>
+
+            <!-- Map -->
+            <div class="relative h-[500px] rounded-2xl border bg-muted/10 overflow-hidden">
+              <iframe
+                :src="selectedOffice.mapUrl"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -147,131 +89,49 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { MapPin } from 'lucide-vue-next'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { SvgMap } from 'vue-svg-map'
-import World from '@svg-maps/world'
-import Brazil from '@svg-maps/brazil'
-import 'vue-svg-map/style.css'
-
-const hoveredOffice = ref<string | null>(null)
-const hoveredLocation = ref<any>(null)
-const selectedCountry = ref<string>('world')
 
 const offices = [
-  { city: 'Rio de Janeiro', country: 'Brasil', countryCode: 'br', stateCode: 'rj', x: 72, y: 68 },
-  { city: 'São José dos Campos', country: 'Brasil', countryCode: 'br', stateCode: 'sp', x: 65, y: 70 },
-  { city: 'Rotterdam', country: 'Holanda', countryCode: 'nl', stateCode: null, x: 0, y: 0 },
-  { city: 'Bogotá', country: 'Colômbia', countryCode: 'co', stateCode: null, x: 0, y: 0 }
+  {
+    city: 'Rio de Janeiro',
+    country: 'Brasil',
+    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235527.4358537857!2d-43.49708229453124!3d-22.906846999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20State%20of%20Rio%20de%20Janeiro%2C%20Brazil!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus'
+  },
+  {
+    city: 'São José dos Campos',
+    country: 'Brasil',
+    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58960.97845488282!2d-45.91922024453124!3d-23.179369999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4a8cb1c5b3c5%3A0x7f2d3c5e9c5e8c5d!2sS%C3%A3o%20Jos%C3%A9%20dos%20Campos%2C%20State%20of%20S%C3%A3o%20Paulo%2C%20Brazil!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus'
+  },
+  {
+    city: 'Rotterdam',
+    country: 'Holanda',
+    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78465.32076262847!2d4.394672999999999!3d51.924419800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b7605f54c47d%3A0x5229bbac955e5e5!2sRotterdam%2C%20Netherlands!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus'
+  },
+  {
+    city: 'Bogotá',
+    country: 'Colômbia',
+    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39277699846!2d-74.14705059453124!3d4.710988600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus'
+  }
 ]
 
-const brazilianOffices = computed(() =>
-  offices.filter(office => office.countryCode === 'br')
-)
+// Define São José dos Campos como padrão
+const selectedOffice = ref(offices[1])
 
-const handleLocationMouseOver = (event: any) => {
-  hoveredLocation.value = event.target
-}
-
-const handleLocationMouseOut = () => {
-  hoveredLocation.value = null
-}
-
-const handleLocationClick = (event: any) => {
-  const locationId = event.target.getAttribute('id')
-  if (locationId === 'br') {
-    selectedCountry.value = 'br'
-  } else if (locationId === 'nl') {
-    selectedCountry.value = 'nl'
-    hoveredOffice.value = 'Rotterdam'
-  } else if (locationId === 'co') {
-    selectedCountry.value = 'co'
-    hoveredOffice.value = 'Bogotá'
-  }
-}
-
-const handleBrazilLocationClick = (event: any) => {
-  const locationId = event.target.getAttribute('id')?.toLowerCase()
-  if (locationId === 'rj') {
-    hoveredOffice.value = 'Rio de Janeiro'
-  } else if (locationId === 'sp') {
-    hoveredOffice.value = 'São José dos Campos'
-  }
-}
-
-const handleOfficeClick = (office: typeof offices[0]) => {
-  hoveredOffice.value = office.city
-  if (office.countryCode === 'br') {
-    selectedCountry.value = 'br'
-  } else {
-    selectedCountry.value = office.countryCode
-  }
-}
-
-const resetToWorldMap = () => {
-  selectedCountry.value = 'world'
-  hoveredOffice.value = null
-}
+useHead({
+  title: 'Contato - Enprodes',
+  meta: [
+    {
+      name: 'description',
+      content: 'Entre em contato com a Enprodes. Escritórios no Brasil, Holanda e Colômbia.'
+    }
+  ]
+})
 </script>
 
 <style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-
-:deep(.svg-map) {
-  width: 100%;
-  height: 100%;
-}
-
-:deep(.svg-map__location) {
-  fill: #e5e7eb;
-  stroke: #ffffff;
-  stroke-width: 0.5;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-
-:deep(.svg-map__location:hover) {
-  fill: #f67031;
-  stroke: #d95a1f;
-  stroke-width: 1;
-}
-
-/* World map - highlight office countries */
-:deep(.svg-map__location#br),
-:deep(.svg-map__location#nl),
-:deep(.svg-map__location#co) {
-  fill: #666666;
-}
-
-:deep(.svg-map__location#br:hover),
-:deep(.svg-map__location#nl:hover),
-:deep(.svg-map__location#co:hover) {
-  fill: #f67031;
-}
-
-/* Brazil map - highlight office states in orange */
-:deep(.svg-map__location#RJ),
-:deep(.svg-map__location#SP) {
-  fill: #f67031 !important;
-  stroke: #d95a1f;
-  stroke-width: 1;
-}
-
-:deep(.svg-map__location#RJ:hover),
-:deep(.svg-map__location#SP:hover) {
-  fill: #e65a1f !important;
-  stroke: #c54a0f;
-  stroke-width: 1.5;
-}
+/* No custom styles needed */
 </style>
