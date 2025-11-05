@@ -4,7 +4,7 @@
       <section class="pt-32 pb-24">
         <div class="container mx-auto px-6">
           <div class="text-center mb-16">
-            <h1 class="text-4xl font-light mb-4">Nossos Serviços</h1>
+            <h1 class="text-4xl font-light mb-4">Nossas Soluções</h1>
             <p class="text-lg text-muted-foreground font-light max-w-3xl mx-auto">
               Soluções completas em engenharia de segurança para infraestrutura crítica, do planejamento à operação.
             </p>
@@ -69,39 +69,14 @@ import { Button } from '@/components/ui/button'
 
 const services = [
   {
-    slug: 'smart-cities',
-    title: 'Smart Cities',
-    description: 'Soluções integradas para cidades inteligentes, incluindo mobilidade urbana, controle de tráfego, sinalização semafórica, monitoramento, iluminação pública e infraestrutura de comunicação.'
+    slug: 'engenharia-proprietario',
+    title: 'Engenharia de Proprietário',
+    description: 'Consultoria técnica especializada representando os interesses do proprietário, com gestão de projetos, análise técnica, fiscalização e validação de soluções de engenharia.'
   },
   {
     slug: 'projetos-engenharia',
     title: 'Projetos de Engenharia',
-    description: 'Desenvolvimento de projetos executivos de engenharia para infraestruturas críticas, com foco em segurança, eficiência operacional e conformidade normativa.'
-  },
-  {
-    slug: 'tuneis',
-    title: 'Túneis',
-    description: 'Projetos especializados de segurança para túneis rodoviários e metroviários, incluindo sistemas de ventilação, detecção de incêndio, CFTV e comunicação de emergência.'
-  },
-  {
-    slug: 'pedagios',
-    title: 'Pedágios',
-    description: 'Sistemas completos para praças de pedágio, incluindo controle de acesso, arrecadação eletrônica, monitoramento e integração com sistemas de gestão de rodovias.'
-  },
-  {
-    slug: 'iluminacao-publica',
-    title: 'Iluminação Pública',
-    description: 'Projetos de iluminação pública eficiente e sustentável, com tecnologia LED, automação, telegestão e integração com sistemas de smart cities.'
-  },
-  {
-    slug: 'its',
-    title: 'Sistemas de Transporte Inteligente (ITS)',
-    description: 'Soluções ITS para gestão de tráfego, incluindo painéis de mensagem variável, sensores de tráfego, câmeras de monitoramento e centrais de controle operacional.'
-  },
-  {
-    slug: 'redes-transmissao',
-    title: 'Rede de Transmissão de Dados',
-    description: 'Infraestrutura de rede para transmissão de dados em alta velocidade, fibra óptica, sistemas wireless e integração de sistemas de segurança e monitoramento.'
+    description: 'Desenvolvimento de projetos executivos multidisciplinares para infraestruturas críticas, desde estudos de viabilidade até metodologia BIM, com foco em segurança e eficiência operacional.'
   },
   {
     slug: 'atividades-campo',
@@ -121,11 +96,11 @@ const services = [
 ]
 
 useHead({
-  title: 'Serviços - Enprodes',
+  title: 'Soluções - Enprodes',
   meta: [
     {
       name: 'description',
-      content: 'Conheça os serviços da Enprodes: Smart Cities, Túneis, ITS, Iluminação Pública e muito mais. Soluções completas em engenharia de segurança.'
+      content: 'Conheça as soluções da Enprodes: Engenharia de Proprietário, Projetos de Engenharia, Atividades de Campo e muito mais. Soluções completas em engenharia de segurança.'
     }
   ]
 })

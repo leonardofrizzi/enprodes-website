@@ -55,10 +55,10 @@
                   >
                     <option value="">Selecione uma área</option>
                     <option value="engenharia">Engenharia</option>
-                    <option value="projetos">Projetos</option>
-                    <option value="tecnologia">Tecnologia</option>
                     <option value="administrativo">Administrativo</option>
                     <option value="comercial">Comercial</option>
+                    <option value="ti">TI</option>
+                    <option value="estagio">Estágio</option>
                     <option value="outro">Outro</option>
                   </select>
                 </div>
@@ -73,12 +73,12 @@
                 </div>
 
                 <div>
-                  <label class="block text-sm font-light mb-2">Currículo (PDF, DOC, DOCX)</label>
+                  <label class="block text-sm font-light mb-2">Currículo (apenas PDF)</label>
                   <div class="relative">
                     <input
                       ref="fileInput"
                       type="file"
-                      accept=".pdf,.doc,.docx"
+                      accept=".pdf"
                       class="hidden"
                       @change="handleFileChange"
                       required
@@ -87,14 +87,14 @@
                       type="button"
                       variant="outline"
                       class="w-full font-light justify-start"
-                      @click="$refs.fileInput.click()"
+                      @click="fileInput?.click()"
                     >
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                         <polyline points="17 8 12 3 7 8"/>
                         <line x1="12" y1="3" x2="12" y2="15"/>
                       </svg>
-                      {{ fileName || 'Selecionar arquivo' }}
+                      {{ fileName || 'Selecionar arquivo PDF' }}
                     </Button>
                   </div>
                 </div>
@@ -212,6 +212,12 @@ const handleFileChange = (event: Event) => {
   const target = event.target as HTMLInputElement
   const file = target.files?.[0]
   if (file) {
+    if (file.type !== 'application/pdf') {
+      alert('Por favor, envie apenas arquivos em formato PDF')
+      target.value = ''
+      fileName.value = ''
+      return
+    }
     if (file.size > 5 * 1024 * 1024) {
       alert('O arquivo deve ter no máximo 5MB')
       target.value = ''

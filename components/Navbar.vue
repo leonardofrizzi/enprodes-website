@@ -2,11 +2,15 @@
   <header
     :class="cn(
       'top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out',
-      scrolled
-        ? 'fixed bg-primary shadow-xl'
-        : mobileMenuOpen
+      !isHomePage
+        ? mobileMenuOpen
           ? 'fixed bg-white shadow-xl'
-          : 'absolute bg-gradient-to-b from-black/40 to-transparent'
+          : 'fixed bg-primary shadow-xl'
+        : scrolled
+          ? 'fixed bg-primary shadow-xl'
+          : mobileMenuOpen
+            ? 'fixed bg-white shadow-xl'
+            : 'absolute bg-gradient-to-b from-black/40 to-transparent'
     )"
   >
     <div :class="cn('container mx-auto flex items-center justify-between h-20 px-6 transition-all duration-500')">
@@ -22,19 +26,18 @@
       </NuxtLink>
 
       <nav class="hidden md:flex items-center gap-1">
-        <Button
+        <NuxtLink
           v-for="item in navItems"
           :key="item.href"
-          variant="ghost"
-          as-child
+          :to="item.href"
           :class="cn(
-            'transition-all duration-300 font-light text-white/90 hover:bg-white/10 hover:text-white'
+            'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-light ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+            'h-10 px-4 py-2',
+            'text-white/90 hover:bg-white/10 hover:text-white transition-all duration-300'
           )"
         >
-          <NuxtLink :to="item.href">
-            {{ item.label }}
-          </NuxtLink>
-        </Button>
+          {{ item.label }}
+        </NuxtLink>
       </nav>
 
       <div class="hidden md:flex items-center gap-3">
@@ -73,7 +76,9 @@
           'md:hidden transition-all duration-300',
           mobileMenuOpen
             ? 'text-black hover:bg-black/10'
-            : 'text-white hover:bg-white/10'
+            : !isHomePage
+              ? 'text-white hover:bg-white/10'
+              : 'text-white hover:bg-white/10'
         )"
         @click="mobileMenuOpen = !mobileMenuOpen"
       >
@@ -97,18 +102,19 @@
         )"
       >
         <div class="p-4 space-y-2">
-          <Button
+          <NuxtLink
             v-for="item in navItems"
             :key="item.href"
-            variant="ghost"
-            as-child
-            class="w-full justify-start text-black/90 hover:bg-black/10 hover:text-black font-light"
+            :to="item.href"
             @click="mobileMenuOpen = false"
+            :class="cn(
+              'flex items-center justify-start whitespace-nowrap rounded-md text-sm font-light ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2',
+              'w-full h-10 px-4 py-2',
+              'text-black/90 hover:bg-black/10 hover:text-black'
+            )"
           >
-            <NuxtLink :to="item.href">
-              {{ item.label }}
-            </NuxtLink>
-          </Button>
+            {{ item.label }}
+          </NuxtLink>
 
           <div class="pt-4 flex items-center justify-center gap-3">
             <a
@@ -145,13 +151,14 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { Menu, X, Mail } from 'lucide-vue-next'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
 const mobileMenuOpen = ref(false)
 const scrolled = ref(false)
+const route = useRoute()
 
 const navItems = [
   { label: 'Início', href: '/' },
@@ -161,21 +168,33 @@ const navItems = [
   { label: 'Contato', href: '/contato' },
 ]
 
+const isHomePage = computed(() => route.path === '/')
+
 const handleScroll = () => {
   // Hero section is 100vh, so we check if we've scrolled past it
   scrolled.value = window.scrollY > window.innerHeight - 100
 }
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
+  // Só adiciona scroll listener na homepage
+  if (isHomePage.value) {
+    window.addEventListener('scroll', handleScroll)
+  }
 })
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
 })
 
-const route = useRoute()
 watch(() => route.path, () => {
   mobileMenuOpen.value = false
+  // Remove/adiciona scroll listener baseado na página
+  if (route.path === '/') {
+    window.addEventListener('scroll', handleScroll)
+    scrolled.value = false
+  } else {
+    window.removeEventListener('scroll', handleScroll)
+    scrolled.value = false
+  }
 })
 </script>
