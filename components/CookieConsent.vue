@@ -22,7 +22,7 @@
                   Ao clicar em "Aceitar", você concorda com o uso de cookies.
                   <NuxtLink
                     to="/politica-privacidade"
-                    class="text-enprodes-orange hover:underline ml-1"
+                    class="text-enprodes-blue hover:underline ml-1"
                   >
                     Saiba mais em nossa Política de Privacidade.
                   </NuxtLink>
@@ -39,7 +39,7 @@
                 </Button>
                 <Button
                   @click="acceptCookies"
-                  class="bg-enprodes-orange hover:bg-enprodes-orange-dark text-white font-light"
+                  class=" font-light"
                 >
                   Aceitar Cookies
                 </Button>

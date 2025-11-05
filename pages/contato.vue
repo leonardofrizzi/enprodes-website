@@ -35,7 +35,7 @@
                   <Textarea placeholder="Como podemos ajudar?" class="min-h-[150px] font-light" />
                 </div>
 
-                <Button class="bg-enprodes-orange hover:bg-enprodes-orange-dark text-white px-8 font-light w-full">
+                <Button class=" px-8 font-light w-full">
                   Enviar mensagem
                 </Button>
               </form>
@@ -59,10 +59,10 @@
                 :key="office.city"
                 class="p-6 rounded-2xl border bg-card hover:shadow-lg transition-all cursor-pointer text-center"
                 @click="selectedOffice = office"
-                :class="{ 'ring-2 ring-enprodes-orange': selectedOffice?.city === office.city }"
+                :class="{ 'ring-2 ring-enprodes-blue': selectedOffice?.city === office.city }"
               >
-                <div class="h-12 w-12 rounded-full bg-enprodes-orange/10 flex items-center justify-center mx-auto mb-4">
-                  <MapPin class="h-6 w-6 text-enprodes-orange" />
+                <div class="h-12 w-12 rounded-full bg-enprodes-blue/10 flex items-center justify-center mx-auto mb-4">
+                  <MapPin class="h-6 w-6 text-enprodes-blue" />
                 </div>
                 <h3 class="font-light text-lg mb-1">{{ office.city }}</h3>
                 <p class="text-sm text-muted-foreground font-light">{{ office.country }}</p>

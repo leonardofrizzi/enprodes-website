@@ -83,13 +83,13 @@
               <div>
                 <h2 class="text-2xl font-light text-foreground mb-4">9. Contato</h2>
                 <p>
-                  Se você tiver dúvidas sobre esta Política de Privacidade ou sobre como tratamos suas informações pessoais, entre em contato conosco através da nossa <NuxtLink to="/contato" class="text-enprodes-orange hover:underline">página de contato</NuxtLink>.
+                  Se você tiver dúvidas sobre esta Política de Privacidade ou sobre como tratamos suas informações pessoais, entre em contato conosco através da nossa <NuxtLink to="/contato" class="text-enprodes-blue hover:underline">página de contato</NuxtLink>.
                 </p>
               </div>
             </div>
 
             <div class="mt-12 pt-8 border-t">
-              <NuxtLink to="/" class="inline-flex items-center text-enprodes-orange hover:text-enprodes-orange-dark font-light">
+              <NuxtLink to="/" class="inline-flex items-center text-enprodes-blue hover:text-enprodes-blue-dark font-light">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M19 12H5M12 19l-7-7 7-7"/>
                 </svg>

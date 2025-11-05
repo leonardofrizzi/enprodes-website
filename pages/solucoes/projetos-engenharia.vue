@@ -20,8 +20,8 @@
             <h2 class="text-3xl font-light mb-6 text-center">Fluxo de Desenvolvimento de Projetos</h2>
             <div class="grid md:grid-cols-3 gap-8">
               <div class="text-center">
-                <div class="h-16 w-16 rounded-full bg-enprodes-orange/10 flex items-center justify-center mx-auto mb-4">
-                  <span class="text-2xl font-light text-enprodes-orange">1</span>
+                <div class="h-16 w-16 rounded-full bg-enprodes-blue/10 flex items-center justify-center mx-auto mb-4">
+                  <span class="text-2xl font-light text-enprodes-blue">1</span>
                 </div>
                 <h3 class="text-xl font-light mb-2">Estudos de Viabilidade</h3>
                 <p class="text-muted-foreground font-light text-sm">
@@ -30,8 +30,8 @@
               </div>
 
               <div class="text-center">
-                <div class="h-16 w-16 rounded-full bg-enprodes-orange/10 flex items-center justify-center mx-auto mb-4">
-                  <span class="text-2xl font-light text-enprodes-orange">2</span>
+                <div class="h-16 w-16 rounded-full bg-enprodes-blue/10 flex items-center justify-center mx-auto mb-4">
+                  <span class="text-2xl font-light text-enprodes-blue">2</span>
                 </div>
                 <h3 class="text-xl font-light mb-2">Projeto Funcional</h3>
                 <p class="text-muted-foreground font-light text-sm">
@@ -40,8 +40,8 @@
               </div>
 
               <div class="text-center">
-                <div class="h-16 w-16 rounded-full bg-enprodes-orange/10 flex items-center justify-center mx-auto mb-4">
-                  <span class="text-2xl font-light text-enprodes-orange">3</span>
+                <div class="h-16 w-16 rounded-full bg-enprodes-blue/10 flex items-center justify-center mx-auto mb-4">
+                  <span class="text-2xl font-light text-enprodes-blue">3</span>
                 </div>
                 <h3 class="text-xl font-light mb-2">Projeto Básico</h3>
                 <p class="text-muted-foreground font-light text-sm">
@@ -50,8 +50,8 @@
               </div>
 
               <div class="text-center">
-                <div class="h-16 w-16 rounded-full bg-enprodes-orange/10 flex items-center justify-center mx-auto mb-4">
-                  <span class="text-2xl font-light text-enprodes-orange">4</span>
+                <div class="h-16 w-16 rounded-full bg-enprodes-blue/10 flex items-center justify-center mx-auto mb-4">
+                  <span class="text-2xl font-light text-enprodes-blue">4</span>
                 </div>
                 <h3 class="text-xl font-light mb-2">Projeto Executivo</h3>
                 <p class="text-muted-foreground font-light text-sm">
@@ -60,8 +60,8 @@
               </div>
 
               <div class="text-center">
-                <div class="h-16 w-16 rounded-full bg-enprodes-orange/10 flex items-center justify-center mx-auto mb-4">
-                  <span class="text-2xl font-light text-enprodes-orange">5</span>
+                <div class="h-16 w-16 rounded-full bg-enprodes-blue/10 flex items-center justify-center mx-auto mb-4">
+                  <span class="text-2xl font-light text-enprodes-blue">5</span>
                 </div>
                 <h3 class="text-xl font-light mb-2">Metodologia BIM</h3>
                 <p class="text-muted-foreground font-light text-sm">
@@ -70,8 +70,8 @@
               </div>
 
               <div class="text-center">
-                <div class="h-16 w-16 rounded-full bg-enprodes-orange/10 flex items-center justify-center mx-auto mb-4">
-                  <span class="text-2xl font-light text-enprodes-orange">6</span>
+                <div class="h-16 w-16 rounded-full bg-enprodes-blue/10 flex items-center justify-center mx-auto mb-4">
+                  <span class="text-2xl font-light text-enprodes-blue">6</span>
                 </div>
                 <h3 class="text-xl font-light mb-2">Projeto Legal</h3>
                 <p class="text-muted-foreground font-light text-sm">
@@ -207,8 +207,8 @@
             <h2 class="text-3xl font-light mb-6">Diferenciais dos Nossos Projetos</h2>
             <div class="grid md:grid-cols-3 gap-8">
               <div>
-                <div class="h-12 w-12 rounded-full bg-enprodes-orange/10 flex items-center justify-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-enprodes-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="h-12 w-12 rounded-full bg-enprodes-blue/10 flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-enprodes-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M12 2L2 7l10 5 10-5-10-5z"/>
                     <path d="M2 17l10 5 10-5"/>
                     <path d="M2 12l10 5 10-5"/>
@@ -221,8 +221,8 @@
               </div>
 
               <div>
-                <div class="h-12 w-12 rounded-full bg-enprodes-orange/10 flex items-center justify-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-enprodes-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="h-12 w-12 rounded-full bg-enprodes-blue/10 flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-enprodes-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M9 11l3 3L22 4"/>
                     <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
                   </svg>
@@ -234,8 +234,8 @@
               </div>
 
               <div>
-                <div class="h-12 w-12 rounded-full bg-enprodes-orange/10 flex items-center justify-center mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-enprodes-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="h-12 w-12 rounded-full bg-enprodes-blue/10 flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-enprodes-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
                     <circle cx="9" cy="7" r="4"/>
                     <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
@@ -251,7 +251,7 @@
           </div>
 
           <div class="text-center">
-            <NuxtLink to="/servicos" class="inline-flex items-center text-enprodes-orange hover:text-enprodes-orange-dark font-light">
+            <NuxtLink to="/servicos" class="inline-flex items-center text-enprodes-blue hover:text-enprodes-blue-dark font-light">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M19 12H5M12 19l-7-7 7-7"/>
               </svg>
@@ -272,7 +272,7 @@
             </p>
             <div class="pt-4">
               <NuxtLink to="/contato">
-                <Button class="bg-enprodes-orange hover:bg-enprodes-orange-dark text-white px-8 h-12 font-light">
+                <Button class=" px-8 h-12 font-light">
                   Entrar em contato
                 </Button>
               </NuxtLink>

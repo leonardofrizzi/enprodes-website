@@ -27,8 +27,8 @@
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/servicos" class="text-white/70 hover:text-white font-light transition-colors">
-                Serviços
+              <NuxtLink to="/solucoes" class="text-white/70 hover:text-white font-light transition-colors">
+                Soluções
               </NuxtLink>
             </li>
             <li>
@@ -45,25 +45,25 @@
         </div>
 
         <div>
-          <h3 class="text-lg font-light mb-4">Serviços</h3>
+          <h3 class="text-lg font-light mb-4">Soluções</h3>
           <ul class="space-y-3">
             <li>
-              <NuxtLink to="/servicos/smart-cities" class="text-white/70 hover:text-white font-light transition-colors">
+              <NuxtLink to="/solucoes/smart-cities" class="text-white/70 hover:text-white font-light transition-colors">
                 Smart Cities
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/servicos/projetos-engenharia" class="text-white/70 hover:text-white font-light transition-colors">
+              <NuxtLink to="/solucoes/projetos-engenharia" class="text-white/70 hover:text-white font-light transition-colors">
                 Projetos de Engenharia
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/servicos/tuneis" class="text-white/70 hover:text-white font-light transition-colors">
+              <NuxtLink to="/solucoes/tuneis" class="text-white/70 hover:text-white font-light transition-colors">
                 Túneis
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/servicos/pedagios" class="text-white/70 hover:text-white font-light transition-colors">
+              <NuxtLink to="/solucoes/pedagios" class="text-white/70 hover:text-white font-light transition-colors">
                 Pedágios
               </NuxtLink>
             </li>

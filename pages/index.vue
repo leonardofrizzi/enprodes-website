@@ -17,15 +17,11 @@
         <div class="container mx-auto px-6 relative z-10">
           <div class="max-w-4xl space-y-6">
             <h1 class="text-5xl md:text-7xl font-light text-white leading-tight">
-              Transformando <span class="text-enprodes-orange">infraestrutura</span> em realidade
+              Engenharia de confiança. Soluções de excelência.
             </h1>
 
-            <p class="text-lg text-white/80 max-w-2xl font-light leading-relaxed">
-              Soluções especializadas em túneis, rodovias, pedágios e cidades inteligentes.
-            </p>
-
             <div class="pt-8">
-              <Button class="bg-enprodes-orange hover:bg-enprodes-orange-dark text-white px-8 font-light">
+              <Button class="px-8 font-light">
                 Ver projetos
               </Button>
             </div>
@@ -58,7 +54,7 @@
           </div>
 
           <div class="text-center mt-12">
-            <Button class="bg-enprodes-orange hover:bg-enprodes-orange-dark text-white px-8 font-light">
+            <Button class="px-8 font-light">
               Ver todos os serviços
             </Button>
           </div>
@@ -77,7 +73,7 @@
                 Especializados em Segurança Operacional e Planejamento de Emergência em túneis e espaços subterrâneos.
               </p>
               <div class="pt-4">
-                <Button class="bg-enprodes-orange hover:bg-enprodes-orange-dark text-white px-8 font-light">
+                <Button class="px-8 font-light">
                   Sobre nós
                 </Button>
               </div>
@@ -100,7 +96,7 @@
               Entre em contato com nossa equipe de especialistas.
             </p>
             <div class="pt-4">
-              <Button class="bg-enprodes-orange hover:bg-enprodes-orange-dark text-white px-8 h-12 font-light">
+              <Button class="px-8 h-12 font-light">
                 Entrar em contato
               </Button>
             </div>

@@ -28,8 +28,8 @@
                 {{ service.description }}
               </p>
 
-              <NuxtLink :to="`/servicos/${service.slug}`">
-                <Button class="bg-enprodes-orange hover:bg-enprodes-orange-dark text-white font-light">
+              <NuxtLink :to="`/solucoes/${service.slug}`">
+                <Button class=" font-light">
                   Saiba mais
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -52,7 +52,7 @@
             </p>
             <div class="pt-4">
               <NuxtLink to="/contato">
-                <Button class="bg-enprodes-orange hover:bg-enprodes-orange-dark text-white px-8 h-12 font-light">
+                <Button class=" px-8 h-12 font-light">
                   Entrar em contato
                 </Button>
               </NuxtLink>

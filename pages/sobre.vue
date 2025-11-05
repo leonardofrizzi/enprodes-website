@@ -42,8 +42,8 @@
             <h2 class="text-4xl font-light mb-12 text-center">Missão, Visão e Valores</h2>
             <div class="grid md:grid-cols-3 gap-8">
               <div class="p-8 rounded-2xl border bg-card">
-                <div class="h-12 w-12 rounded-full bg-enprodes-orange/10 flex items-center justify-center mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-enprodes-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="h-12 w-12 rounded-full bg-enprodes-blue/10 flex items-center justify-center mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-enprodes-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M12 2L2 7l10 5 10-5-10-5z"/>
                     <path d="M2 17l10 5 10-5"/>
                     <path d="M2 12l10 5 10-5"/>
@@ -56,8 +56,8 @@
               </div>
 
               <div class="p-8 rounded-2xl border bg-card">
-                <div class="h-12 w-12 rounded-full bg-enprodes-orange/10 flex items-center justify-center mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-enprodes-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="h-12 w-12 rounded-full bg-enprodes-blue/10 flex items-center justify-center mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-enprodes-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/>
                     <circle cx="12" cy="12" r="3"/>
                   </svg>
@@ -69,8 +69,8 @@
               </div>
 
               <div class="p-8 rounded-2xl border bg-card">
-                <div class="h-12 w-12 rounded-full bg-enprodes-orange/10 flex items-center justify-center mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-enprodes-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="h-12 w-12 rounded-full bg-enprodes-blue/10 flex items-center justify-center mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-enprodes-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M12 2L2 7l10 5 10-5-10-5z"/>
                     <path d="M2 17l10 5 10-5"/>
                     <path d="M2 12l10 5 10-5"/>
@@ -79,23 +79,23 @@
                 <h3 class="text-2xl font-light mb-4">Valores</h3>
                 <ul class="space-y-2 text-muted-foreground font-light">
                   <li class="flex items-start gap-2">
-                    <span class="text-enprodes-orange mt-1">•</span>
+                    <span class="text-enprodes-blue mt-1">•</span>
                     <span>Excelência técnica</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <span class="text-enprodes-orange mt-1">•</span>
+                    <span class="text-enprodes-blue mt-1">•</span>
                     <span>Inovação contínua</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <span class="text-enprodes-orange mt-1">•</span>
+                    <span class="text-enprodes-blue mt-1">•</span>
                     <span>Compromisso com segurança</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <span class="text-enprodes-orange mt-1">•</span>
+                    <span class="text-enprodes-blue mt-1">•</span>
                     <span>Ética e transparência</span>
                   </li>
                   <li class="flex items-start gap-2">
-                    <span class="text-enprodes-orange mt-1">•</span>
+                    <span class="text-enprodes-blue mt-1">•</span>
                     <span>Sustentabilidade</span>
                   </li>
                 </ul>
@@ -110,8 +110,8 @@
             </p>
             <div class="grid md:grid-cols-3 gap-8">
               <div class="p-6 rounded-2xl border bg-card text-center">
-                <div class="h-16 w-16 rounded-full bg-enprodes-orange/10 flex items-center justify-center mx-auto mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-enprodes-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="h-16 w-16 rounded-full bg-enprodes-blue/10 flex items-center justify-center mx-auto mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-enprodes-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                     <circle cx="12" cy="10" r="3"/>
                   </svg>
@@ -122,8 +122,8 @@
               </div>
 
               <div class="p-6 rounded-2xl border bg-card text-center">
-                <div class="h-16 w-16 rounded-full bg-enprodes-orange/10 flex items-center justify-center mx-auto mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-enprodes-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="h-16 w-16 rounded-full bg-enprodes-blue/10 flex items-center justify-center mx-auto mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-enprodes-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                     <circle cx="12" cy="10" r="3"/>
                   </svg>
@@ -133,8 +133,8 @@
               </div>
 
               <div class="p-6 rounded-2xl border bg-card text-center">
-                <div class="h-16 w-16 rounded-full bg-enprodes-orange/10 flex items-center justify-center mx-auto mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-enprodes-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="h-16 w-16 rounded-full bg-enprodes-blue/10 flex items-center justify-center mx-auto mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-enprodes-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                     <circle cx="12" cy="10" r="3"/>
                   </svg>

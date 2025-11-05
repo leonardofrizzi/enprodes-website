@@ -52,9 +52,9 @@ module.exports = {
           foreground: 'hsl(var(--card-foreground))',
         },
         enprodes: {
-          orange: '#f67031',
-          'orange-light': '#ff8c5a',
-          'orange-dark': '#d95a1f',
+          blue: '#7ca4b4',
+          'blue-light': '#9bc1cf',
+          'blue-dark': '#5d8a9a',
           gray: '#666666',
           'gray-light': '#888888',
           'gray-dark': '#444444',

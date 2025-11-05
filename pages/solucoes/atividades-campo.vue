@@ -23,19 +23,19 @@
               <p class="text-sm text-muted-foreground font-light mb-4">Acompanhamento Técnico de Obra</p>
               <ul class="space-y-3 text-left inline-block">
                 <li class="flex items-start">
-                  <span class="text-enprodes-orange mr-2">•</span>
+                  <span class="text-enprodes-blue mr-2">•</span>
                   <span class="text-muted-foreground font-light">Soluções de engenharia</span>
                 </li>
                 <li class="flex items-start">
-                  <span class="text-enprodes-orange mr-2">•</span>
+                  <span class="text-enprodes-blue mr-2">•</span>
                   <span class="text-muted-foreground font-light">Identificação de interferências</span>
                 </li>
                 <li class="flex items-start">
-                  <span class="text-enprodes-orange mr-2">•</span>
+                  <span class="text-enprodes-blue mr-2">•</span>
                   <span class="text-muted-foreground font-light">Compatibilização de projetos</span>
                 </li>
                 <li class="flex items-start">
-                  <span class="text-enprodes-orange mr-2">•</span>
+                  <span class="text-enprodes-blue mr-2">•</span>
                   <span class="text-muted-foreground font-light">Fiscalização</span>
                 </li>
               </ul>
@@ -46,11 +46,11 @@
               <p class="text-sm text-muted-foreground font-light mb-4 opacity-0">placeholder</p>
               <ul class="space-y-3 text-left inline-block">
                 <li class="flex items-start">
-                  <span class="text-enprodes-orange mr-2">•</span>
+                  <span class="text-enprodes-blue mr-2">•</span>
                   <span class="text-muted-foreground font-light">Ensaio e testes de equipamentos e sistemas</span>
                 </li>
                 <li class="flex items-start">
-                  <span class="text-enprodes-orange mr-2">•</span>
+                  <span class="text-enprodes-blue mr-2">•</span>
                   <span class="text-muted-foreground font-light">Elaboração de laudos técnicos</span>
                 </li>
               </ul>
@@ -61,27 +61,27 @@
               <p class="text-sm text-muted-foreground font-light mb-4 opacity-0">placeholder</p>
               <ul class="space-y-3 text-left inline-block">
                 <li class="flex items-start">
-                  <span class="text-enprodes-orange mr-2">•</span>
+                  <span class="text-enprodes-blue mr-2">•</span>
                   <span class="text-muted-foreground font-light">Mecânica</span>
                 </li>
                 <li class="flex items-start">
-                  <span class="text-enprodes-orange mr-2">•</span>
+                  <span class="text-enprodes-blue mr-2">•</span>
                   <span class="text-muted-foreground font-light">Civil</span>
                 </li>
                 <li class="flex items-start">
-                  <span class="text-enprodes-orange mr-2">•</span>
+                  <span class="text-enprodes-blue mr-2">•</span>
                   <span class="text-muted-foreground font-light">Elétrica</span>
                 </li>
                 <li class="flex items-start">
-                  <span class="text-enprodes-orange mr-2">•</span>
+                  <span class="text-enprodes-blue mr-2">•</span>
                   <span class="text-muted-foreground font-light">Eletrônica</span>
                 </li>
                 <li class="flex items-start">
-                  <span class="text-enprodes-orange mr-2">•</span>
+                  <span class="text-enprodes-blue mr-2">•</span>
                   <span class="text-muted-foreground font-light">Automação</span>
                 </li>
                 <li class="flex items-start">
-                  <span class="text-enprodes-orange mr-2">•</span>
+                  <span class="text-enprodes-blue mr-2">•</span>
                   <span class="text-muted-foreground font-light">Emissão de relatório técnico</span>
                 </li>
               </ul>
@@ -134,7 +134,7 @@
           </div>
 
           <div class="text-center">
-            <NuxtLink to="/servicos" class="inline-flex items-center text-enprodes-orange hover:text-enprodes-orange-dark font-light">
+            <NuxtLink to="/servicos" class="inline-flex items-center text-enprodes-blue hover:text-enprodes-blue-dark font-light">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M19 12H5M12 19l-7-7 7-7"/>
               </svg>
@@ -155,7 +155,7 @@
             </p>
             <div class="pt-4">
               <NuxtLink to="/contato">
-                <Button class="bg-enprodes-orange hover:bg-enprodes-orange-dark text-white px-8 h-12 font-light">
+                <Button class=" px-8 h-12 font-light">
                   Entrar em contato
                 </Button>
               </NuxtLink>

@@ -84,7 +84,7 @@
           </div>
 
           <div class="text-center">
-            <NuxtLink to="/servicos" class="inline-flex items-center text-enprodes-orange hover:text-enprodes-orange-dark font-light">
+            <NuxtLink to="/servicos" class="inline-flex items-center text-enprodes-blue hover:text-enprodes-blue-dark font-light">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M19 12H5M12 19l-7-7 7-7"/>
               </svg>
@@ -105,7 +105,7 @@
             </p>
             <div class="pt-4">
               <NuxtLink to="/contato">
-                <Button class="bg-enprodes-orange hover:bg-enprodes-orange-dark text-white px-8 h-12 font-light">
+                <Button class=" px-8 h-12 font-light">
                   Entrar em contato
                 </Button>
               </NuxtLink>
