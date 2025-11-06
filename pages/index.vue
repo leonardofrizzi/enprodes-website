@@ -32,7 +32,7 @@
       <section class="py-24">
         <div class="container mx-auto px-6">
           <div class="text-center max-w-2xl mx-auto mb-16">
-            <h2 class="text-4xl font-light mb-4">Nossos Serviços</h2>
+            <h2 class="text-4xl font-light mb-4">Nossas Soluções</h2>
             <p class="text-lg text-muted-foreground font-light">
               Oferecemos soluções completas de engenharia para infraestrutura crítica
             </p>
@@ -58,9 +58,11 @@
           </div>
 
           <div class="text-center mt-12">
-            <Button class="px-8 font-light">
-              Ver todos os serviços
-            </Button>
+            <NuxtLink to="/solucoes">
+              <Button class="px-8 font-light">
+                Ver todas as soluções
+              </Button>
+            </NuxtLink>
           </div>
         </div>
       </section>
@@ -77,9 +79,11 @@
                 Especializados em Segurança Operacional e Planejamento de Emergência em túneis e espaços subterrâneos.
               </p>
               <div class="pt-4">
-                <Button class="px-8 font-light">
-                  Sobre nós
-                </Button>
+                <NuxtLink to="/sobre">
+                  <Button class="px-8 font-light">
+                    Sobre nós
+                  </Button>
+                </NuxtLink>
               </div>
             </div>
 
@@ -164,9 +168,11 @@
               Entre em contato com nossa equipe de especialistas.
             </p>
             <div class="pt-4">
-              <Button class="px-8 h-12 font-light">
-                Entrar em contato
-              </Button>
+              <NuxtLink to="/contato">
+                <Button class="px-8 h-12 font-light">
+                  Entrar em contato
+                </Button>
+              </NuxtLink>
             </div>
           </div>
         </div>
