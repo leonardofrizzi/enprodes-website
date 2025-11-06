@@ -39,6 +39,84 @@
           </div>
 
           <div class="mb-24">
+            <h2 class="text-4xl font-light mb-6 text-center">Linha do Tempo</h2>
+            <p class="text-center text-muted-foreground font-light mb-12 max-w-2xl mx-auto">
+              Nossa trajetória de crescimento e grandes projetos realizados ao longo dos anos.
+            </p>
+            <div class="max-w-4xl mx-auto">
+              <div class="space-y-8">
+                <div class="relative pl-8 border-l-2 border-enprodes-blue/30 pb-8">
+                  <div class="absolute -left-2 top-0 h-4 w-4 rounded-full bg-enprodes-blue shadow-lg shadow-enprodes-blue/50"></div>
+                  <div class="group bg-white border-2 border-gray-200 rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-[1.02] hover:-translate-x-2 transition-all duration-300 hover:border-enprodes-blue/50 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute -right-10 -top-10 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+                    <div class="relative z-10">
+                    <div class="flex items-start justify-between mb-3">
+                      <h3 class="text-xl font-light group-hover:text-enprodes-blue transition-colors duration-300">Fundação da Mirabit</h3>
+                      <span class="text-sm font-medium text-white px-3 py-1 bg-gradient-to-r from-enprodes-blue to-enprodes-blue/80 rounded-full shadow-md">2001</span>
+                    </div>
+                    <p class="text-muted-foreground font-light">
+                      Fundação da empresa pelo Especialista Ricardo Miranda, com foco inicial em projetos de segurança para túneis.
+                    </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="relative pl-8 border-l-2 border-enprodes-blue/30 pb-8">
+                  <div class="absolute -left-2 top-0 h-4 w-4 rounded-full bg-enprodes-blue shadow-lg shadow-enprodes-blue/50"></div>
+                  <div class="group bg-white border-2 border-gray-200 rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-[1.02] hover:-translate-x-2 transition-all duration-300 hover:border-enprodes-blue/50 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute -right-10 -top-10 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+                    <div class="relative z-10">
+                    <div class="flex items-start justify-between mb-3">
+                      <h3 class="text-xl font-light group-hover:text-enprodes-blue transition-colors duration-300">Parceria Internacional</h3>
+                      <span class="text-sm font-medium text-white px-3 py-1 bg-gradient-to-r from-enprodes-blue to-enprodes-blue/80 rounded-full shadow-md">2008</span>
+                    </div>
+                    <p class="text-muted-foreground font-light">
+                      Parceria estratégica com a Enprodes Management Consultancy B.V., expandindo atuação para mercados internacionais.
+                    </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="relative pl-8 border-l-2 border-enprodes-blue/30 pb-8">
+                  <div class="absolute -left-2 top-0 h-4 w-4 rounded-full bg-enprodes-blue shadow-lg shadow-enprodes-blue/50"></div>
+                  <div class="group bg-white border-2 border-gray-200 rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-[1.02] hover:-translate-x-2 transition-all duration-300 hover:border-enprodes-blue/50 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute -right-10 -top-10 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+                    <div class="relative z-10">
+                    <div class="flex items-start justify-between mb-3">
+                      <h3 class="text-xl font-light group-hover:text-enprodes-blue transition-colors duration-300">Expansão Brasil</h3>
+                      <span class="text-sm font-medium text-white px-3 py-1 bg-gradient-to-r from-enprodes-blue to-enprodes-blue/80 rounded-full shadow-md">2016</span>
+                    </div>
+                    <p class="text-muted-foreground font-light">
+                      Consolidação no mercado brasileiro com atuação em grandes projetos de infraestrutura rodoviária e urbana.
+                    </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="relative pl-8 border-l-2 border-enprodes-blue/30">
+                  <div class="absolute -left-2 top-0 h-4 w-4 rounded-full bg-enprodes-blue shadow-lg shadow-enprodes-blue/50"></div>
+                  <div class="group bg-white border-2 border-gray-200 rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-[1.02] hover:-translate-x-2 transition-all duration-300 hover:border-enprodes-blue/50 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute -right-10 -top-10 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+                    <div class="relative z-10">
+                    <div class="flex items-start justify-between mb-3">
+                      <h3 class="text-xl font-light group-hover:text-enprodes-blue transition-colors duration-300">Presente</h3>
+                      <span class="text-sm font-medium text-white px-3 py-1 bg-gradient-to-r from-enprodes-blue to-enprodes-blue/80 rounded-full shadow-md">2025</span>
+                    </div>
+                    <p class="text-muted-foreground font-light">
+                      Referência nacional em projetos de engenharia de segurança, com atuação em túneis, rodovias, cidades inteligentes e infraestrutura crítica.
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-24">
             <h2 class="text-4xl font-light mb-12 text-center">Missão e Visão</h2>
             <div class="grid md:grid-cols-2 gap-8 mb-24" style="perspective: 1000px;">
               <div class="group p-8 rounded-2xl border-2 border-enprodes-blue/20 bg-gradient-to-br from-white to-gray-50 shadow-[0_8px_30px_rgb(0,0,0,0.12)] backdrop-blur transition-all duration-500 hover:shadow-[0_20px_60px_rgb(0,0,0,0.25)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue hover:shadow-enprodes-blue/20 relative overflow-hidden" style="transform-style: preserve-3d;">
@@ -182,98 +260,31 @@
             </div>
           </div>
 
-          <div class="mb-24">
-            <h2 class="text-4xl font-light mb-6 text-center">Linha do Tempo</h2>
-            <p class="text-center text-muted-foreground font-light mb-12 max-w-2xl mx-auto">
-              Nossa trajetória de crescimento e grandes projetos realizados ao longo dos anos.
-            </p>
-            <div class="max-w-4xl mx-auto">
-              <div class="space-y-8">
-                <div class="relative pl-8 border-l-2 border-enprodes-blue/30 pb-8">
-                  <div class="absolute -left-2 top-0 h-4 w-4 rounded-full bg-enprodes-blue shadow-lg shadow-enprodes-blue/50"></div>
-                  <div class="group bg-white border-2 border-gray-200 rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-[1.02] hover:-translate-x-2 transition-all duration-300 hover:border-enprodes-blue/50 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="absolute -right-10 -top-10 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
-                    <div class="relative z-10">
-                    <div class="flex items-start justify-between mb-3">
-                      <h3 class="text-xl font-light group-hover:text-enprodes-blue transition-colors duration-300">Fundação da Mirabit</h3>
-                      <span class="text-sm font-medium text-white px-3 py-1 bg-gradient-to-r from-enprodes-blue to-enprodes-blue/80 rounded-full shadow-md">2001</span>
-                    </div>
-                    <p class="text-muted-foreground font-light">
-                      Fundação da empresa pelo Especialista Ricardo Miranda, com foco inicial em projetos de segurança para túneis.
-                    </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="relative pl-8 border-l-2 border-enprodes-blue/30 pb-8">
-                  <div class="absolute -left-2 top-0 h-4 w-4 rounded-full bg-enprodes-blue shadow-lg shadow-enprodes-blue/50"></div>
-                  <div class="group bg-white border-2 border-gray-200 rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-[1.02] hover:-translate-x-2 transition-all duration-300 hover:border-enprodes-blue/50 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="absolute -right-10 -top-10 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
-                    <div class="relative z-10">
-                    <div class="flex items-start justify-between mb-3">
-                      <h3 class="text-xl font-light group-hover:text-enprodes-blue transition-colors duration-300">Parceria Internacional</h3>
-                      <span class="text-sm font-medium text-white px-3 py-1 bg-gradient-to-r from-enprodes-blue to-enprodes-blue/80 rounded-full shadow-md">2008</span>
-                    </div>
-                    <p class="text-muted-foreground font-light">
-                      Parceria estratégica com a Enprodes Management Consultancy B.V., expandindo atuação para mercados internacionais.
-                    </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="relative pl-8 border-l-2 border-enprodes-blue/30 pb-8">
-                  <div class="absolute -left-2 top-0 h-4 w-4 rounded-full bg-enprodes-blue shadow-lg shadow-enprodes-blue/50"></div>
-                  <div class="group bg-white border-2 border-gray-200 rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-[1.02] hover:-translate-x-2 transition-all duration-300 hover:border-enprodes-blue/50 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="absolute -right-10 -top-10 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
-                    <div class="relative z-10">
-                    <div class="flex items-start justify-between mb-3">
-                      <h3 class="text-xl font-light group-hover:text-enprodes-blue transition-colors duration-300">Expansão Brasil</h3>
-                      <span class="text-sm font-medium text-white px-3 py-1 bg-gradient-to-r from-enprodes-blue to-enprodes-blue/80 rounded-full shadow-md">2016</span>
-                    </div>
-                    <p class="text-muted-foreground font-light">
-                      Consolidação no mercado brasileiro com atuação em grandes projetos de infraestrutura rodoviária e urbana.
-                    </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="relative pl-8 border-l-2 border-enprodes-blue/30">
-                  <div class="absolute -left-2 top-0 h-4 w-4 rounded-full bg-enprodes-blue shadow-lg shadow-enprodes-blue/50"></div>
-                  <div class="group bg-white border-2 border-gray-200 rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-[1.02] hover:-translate-x-2 transition-all duration-300 hover:border-enprodes-blue/50 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="absolute -right-10 -top-10 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
-                    <div class="relative z-10">
-                    <div class="flex items-start justify-between mb-3">
-                      <h3 class="text-xl font-light group-hover:text-enprodes-blue transition-colors duration-300">Presente</h3>
-                      <span class="text-sm font-medium text-white px-3 py-1 bg-gradient-to-r from-enprodes-blue to-enprodes-blue/80 rounded-full shadow-md">2025</span>
-                    </div>
-                    <p class="text-muted-foreground font-light">
-                      Referência nacional em projetos de engenharia de segurança, com atuação em túneis, rodovias, cidades inteligentes e infraestrutura crítica.
-                    </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
+          <div id="clientes">
             <h2 class="text-4xl font-light mb-6 text-center">Nossos Clientes</h2>
             <p class="text-center text-muted-foreground font-light mb-12 max-w-2xl mx-auto">
               Trabalhamos com as principais empresas e órgãos públicos do Brasil e do mundo, entregando projetos de alta complexidade e impacto.
             </p>
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-              <div v-for="i in 30" :key="i" class="aspect-square rounded-xl border bg-card hover:shadow-lg transition-all flex items-center justify-center p-4">
-                <div class="text-center text-muted-foreground">
+              <div
+                v-for="client in clients"
+                :key="client.name"
+                class="group aspect-square rounded-xl border-2 border-gray-200 bg-white hover:shadow-lg hover:border-enprodes-blue/50 transition-all duration-300 flex items-center justify-center p-6 relative overflow-hidden"
+              >
+                <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <img
+                  v-if="client.logo"
+                  :src="client.logo"
+                  :alt="client.name"
+                  class="relative z-10 w-full h-full object-contain group-hover:scale-110 transition-all duration-300"
+                />
+                <div v-else class="text-center text-muted-foreground relative z-10">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-2 opacity-30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
                     <circle cx="8.5" cy="8.5" r="1.5"/>
                     <polyline points="21 15 16 10 5 21"/>
                   </svg>
-                  <p class="text-xs font-light opacity-50">Logo {{ i }}</p>
+                  <p class="text-xs font-light opacity-50">{{ client.name }}</p>
                 </div>
               </div>
             </div>
@@ -285,6 +296,34 @@
 </template>
 
 <script setup lang="ts">
+const clients = [
+  { name: 'Arteris', logo: '/arteris.webp' },
+  { name: 'CCR', logo: '/ccr.webp' },
+  { name: 'Tamoios', logo: '/tamoios.webp' },
+  { name: 'Cliente 4', logo: '/odebrecht.webp' },
+  { name: 'Cliente 5', logo: '/smartluz.webp' },
+  { name: 'Cliente 6', logo: '/viario.webp' },
+  { name: 'Cliente 7', logo: '/nova381.webp' },
+  { name: 'Cliente 8', logo: '/motiva.webp' },
+  { name: 'Cliente 9', logo: '/ecorodovias.webp' },
+  { name: 'Cliente 10', logo: '/portonovo.webp' },
+  { name: 'Cliente 11', logo: '/rota.webp' },
+  { name: 'Cliente 12', logo: '/coqueiros.webp' },
+  { name: 'Cliente 13', logo: '/rio.webp' },
+  { name: 'Cliente 14', logo: '/parana.webp' },
+  { name: 'Cliente 15', logo: '/spmar.webp' },
+  { name: 'Cliente 16', logo: '/via040.webp' },
+  { name: 'Cliente 17', logo: '/metrorio.svg' },
+  { name: 'Cliente 18', logo: '/bahia.webp' },
+  { name: 'Cliente 19', logo: '/lamsac.webp' },
+  { name: 'Cliente 20', logo: '/lamsa.webp' },
+  { name: 'Cliente 21', logo: '/viapar.webp' },
+  { name: 'Cliente 22', logo: '/crt.webp' },
+  { name: 'Cliente 23', logo: '/eterc.webp' },
+  { name: 'Cliente 24', logo: '/egtc.webp' },
+  { name: 'Cliente 25', logo: '/br.webp' }
+]
+
 useHead({
   title: 'Sobre Nós - Enprodes',
   meta: [

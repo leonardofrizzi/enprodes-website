@@ -16,7 +16,10 @@
             </div>
           </div>
 
-          <div class="p-8 rounded-2xl border bg-card mb-24">
+          <div class="group p-8 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:border-enprodes-blue/50 relative overflow-hidden mb-24">
+            <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+            <div class="relative z-10">
             <h2 class="text-3xl font-light mb-6 text-center">Desenvolvimento de Projetos</h2>
             <div class="grid md:grid-cols-3 gap-8">
               <div class="text-center">
@@ -105,109 +108,149 @@
                 </p>
               </div>
             </div>
+            </div>
           </div>
 
           <div class="grid md:grid-cols-2 gap-12 mb-24">
-            <div class="p-6 rounded-2xl border bg-card">
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
               <div class="relative h-64 rounded-xl bg-muted/20 border flex items-center justify-center mb-6">
                 <p class="text-muted-foreground font-light">Imagem aqui</p>
               </div>
-              <h2 class="text-2xl font-light mb-4">Automação e Supervisório</h2>
+              <h2 class="text-2xl font-light mb-4 group-hover:text-enprodes-blue transition-colors duration-300">Automação e Supervisório</h2>
               <p class="text-muted-foreground font-light leading-relaxed">
                 Projetos de automação industrial e predial, sistemas SCADA e supervisórios. Desenvolvimento de arquiteturas de automação para gerenciamento centralizado de instalações, com integração de sensores, controladores e interfaces homem-máquina (IHM).
               </p>
+              </div>
             </div>
 
-            <div class="p-6 rounded-2xl border bg-card">
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
               <div class="relative h-64 rounded-xl bg-muted/20 border flex items-center justify-center mb-6">
                 <p class="text-muted-foreground font-light">Imagem aqui</p>
               </div>
-              <h2 class="text-2xl font-light mb-4">Elétrica e Eletrônica</h2>
+              <h2 class="text-2xl font-light mb-4 group-hover:text-enprodes-blue transition-colors duration-300">Elétrica e Eletrônica</h2>
               <p class="text-muted-foreground font-light leading-relaxed">
                 Projetos elétricos de baixa, média e alta tensão. Dimensionamento de subestações, quadros elétricos, sistemas eletrônicos, CFTV, controle de acesso, telecomunicações e infraestrutura de TI.
               </p>
+              </div>
             </div>
           </div>
 
           <div class="grid md:grid-cols-2 gap-12 mb-24">
-            <div class="p-6 rounded-2xl border bg-card">
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
               <div class="relative h-64 rounded-xl bg-muted/20 border flex items-center justify-center mb-6">
                 <p class="text-muted-foreground font-light">Imagem aqui</p>
               </div>
-              <h2 class="text-2xl font-light mb-4">Mecânica</h2>
+              <h2 class="text-2xl font-light mb-4 group-hover:text-enprodes-blue transition-colors duration-300">Mecânica</h2>
               <p class="text-muted-foreground font-light leading-relaxed">
                 Projetos mecânicos para equipamentos, tubulações, suportes e estruturas metálicas. Dimensionamento de sistemas mecânicos, análise de cargas, vibrações e especificação de materiais para ambientes industriais.
               </p>
+              </div>
             </div>
 
-            <div class="p-6 rounded-2xl border bg-card">
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
               <div class="relative h-64 rounded-xl bg-muted/20 border flex items-center justify-center mb-6">
                 <p class="text-muted-foreground font-light">Imagem aqui</p>
               </div>
-              <h2 class="text-2xl font-light mb-4">Ventilação</h2>
+              <h2 class="text-2xl font-light mb-4 group-hover:text-enprodes-blue transition-colors duration-300">Ventilação</h2>
               <p class="text-muted-foreground font-light leading-relaxed">
                 Projetos de ventilação natural e mecânica, exaustão e climatização. Cálculo de vazões, dimensionamento de dutos, seleção de equipamentos e sistemas de controle. Soluções para qualidade do ar e conforto ambiental.
               </p>
+              </div>
             </div>
           </div>
 
           <div class="grid md:grid-cols-2 gap-12 mb-24">
-            <div class="p-6 rounded-2xl border bg-card">
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
               <div class="relative h-64 rounded-xl bg-muted/20 border flex items-center justify-center mb-6">
                 <p class="text-muted-foreground font-light">Imagem aqui</p>
               </div>
-              <h2 class="text-2xl font-light mb-4">Combate a Incêndio</h2>
+              <h2 class="text-2xl font-light mb-4 group-hover:text-enprodes-blue transition-colors duration-300">Combate a Incêndio</h2>
               <p class="text-muted-foreground font-light leading-relaxed">
                 Projetos de sistemas de proteção contra incêndio: sprinklers, hidrantes, sistemas de espuma, gases e detecção automática. Desenvolvimento conforme normas nacionais e internacionais. Análise de risco e estratégias de proteção.
               </p>
+              </div>
             </div>
 
-            <div class="p-6 rounded-2xl border bg-card">
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
               <div class="relative h-64 rounded-xl bg-muted/20 border flex items-center justify-center mb-6">
                 <p class="text-muted-foreground font-light">Imagem aqui</p>
               </div>
-              <h2 class="text-2xl font-light mb-4">Estrutural</h2>
+              <h2 class="text-2xl font-light mb-4 group-hover:text-enprodes-blue transition-colors duration-300">Estrutural</h2>
               <p class="text-muted-foreground font-light leading-relaxed">
                 Projetos estruturais em concreto armado, estruturas metálicas e mistas. Análise estrutural, dimensionamento de fundações, contenções e obras especiais. Projetos de reforço e adequação de edificações existentes.
               </p>
+              </div>
             </div>
           </div>
 
           <div class="grid md:grid-cols-2 gap-12 mb-24">
-            <div class="p-6 rounded-2xl border bg-card">
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
               <div class="relative h-64 rounded-xl bg-muted/20 border flex items-center justify-center mb-6">
                 <p class="text-muted-foreground font-light">Imagem aqui</p>
               </div>
-              <h2 class="text-2xl font-light mb-4">Arquitetônico</h2>
+              <h2 class="text-2xl font-light mb-4 group-hover:text-enprodes-blue transition-colors duration-300">Arquitetônico</h2>
               <p class="text-muted-foreground font-light leading-relaxed">
                 Projetos arquitetônicos para edificações técnicas, salas de controle, subestações e instalações operacionais. Estudos de layout, ergonomia, acessibilidade e conforto ambiental. Integração com projetos complementares.
               </p>
+              </div>
             </div>
 
-            <div class="p-6 rounded-2xl border bg-card">
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
               <div class="relative h-64 rounded-xl bg-muted/20 border flex items-center justify-center mb-6">
                 <p class="text-muted-foreground font-light">Imagem aqui</p>
               </div>
-              <h2 class="text-2xl font-light mb-4">Hidráulico</h2>
+              <h2 class="text-2xl font-light mb-4 group-hover:text-enprodes-blue transition-colors duration-300">Hidráulico</h2>
               <p class="text-muted-foreground font-light leading-relaxed">
                 Projetos hidráulicos e hidrossanitários, sistemas de água fria, água quente, esgoto, águas pluviais e drenagem. Dimensionamento de tubulações, reservatórios e sistemas de bombeamento.
               </p>
+              </div>
             </div>
           </div>
 
           <div class="grid md:grid-cols-2 gap-12 mb-24">
-            <div class="p-6 rounded-2xl border bg-card">
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
               <div class="relative h-64 rounded-xl bg-muted/20 border flex items-center justify-center mb-6">
                 <p class="text-muted-foreground font-light">Imagem aqui</p>
               </div>
-              <h2 class="text-2xl font-light mb-4">Rede e Transmissão de Dados</h2>
+              <h2 class="text-2xl font-light mb-4 group-hover:text-enprodes-blue transition-colors duration-300">Rede e Transmissão de Dados</h2>
               <p class="text-muted-foreground font-light leading-relaxed">
                 Projetos de infraestrutura de rede e telecomunicações. Cabeamento estruturado, fibra óptica, sistemas wireless, racks técnicos e integração de sistemas. Desenvolvimento de arquiteturas de rede e protocolos de comunicação.
               </p>
+              </div>
             </div>
           </div>
 
-          <div class="p-8 rounded-2xl border bg-card mb-24">
+          <div class="group p-8 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:border-enprodes-blue/50 relative overflow-hidden mb-24">
+            <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+            <div class="relative z-10">
             <h2 class="text-3xl font-light mb-6">Diferenciais dos Nossos Projetos</h2>
             <div class="grid md:grid-cols-3 gap-8">
               <div>
@@ -252,6 +295,7 @@
                   Profissionais especializados em todas as disciplinas de engenharia.
                 </p>
               </div>
+            </div>
             </div>
           </div>
 

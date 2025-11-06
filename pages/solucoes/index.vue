@@ -14,13 +14,16 @@
             <div
               v-for="service in services"
               :key="service.slug"
-              class="p-6 rounded-2xl border bg-card"
+              class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden"
             >
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
               <div class="relative h-48 rounded-xl bg-muted/20 border mb-6 flex items-center justify-center">
                 <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
               </div>
 
-              <h2 class="text-2xl font-light mb-4">
+              <h2 class="text-2xl font-light mb-4 group-hover:text-enprodes-blue transition-colors duration-300">
                 {{ service.title }}
               </h2>
 
@@ -36,6 +39,7 @@
                   </svg>
                 </Button>
               </NuxtLink>
+              </div>
             </div>
           </div>
         </div>
