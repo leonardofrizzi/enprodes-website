@@ -16,79 +16,98 @@
             </div>
           </div>
 
-          <h2 class="text-4xl font-light mb-12 text-center">Documentação Técnica</h2>
-          <div class="grid md:grid-cols-2 gap-12 mb-24">
-            <div class="p-6 rounded-2xl border bg-card">
-              <div class="relative h-64 rounded-xl bg-muted/20 border flex items-center justify-center mb-6">
-                <p class="text-muted-foreground font-light">Imagem aqui</p>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
+                <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
+                  <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+                </div>
+                <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Manuais de Operação</h2>
+                <p class="text-muted-foreground font-light leading-relaxed text-sm">
+                  Elaboração de manuais de operação completos para sistemas e equipamentos, com documentação de procedimentos operacionais e interfaces de controle.
+                </p>
               </div>
-              <h2 class="text-2xl font-light mb-4">Manuais de Operação</h2>
-              <p class="text-muted-foreground font-light leading-relaxed">
-                Elaboração de manuais de operação completos para sistemas e equipamentos. Documentação de procedimentos operacionais, interfaces de controle e rotinas de operação normal.
-              </p>
             </div>
 
-            <div class="p-6 rounded-2xl border bg-card">
-              <div class="relative h-64 rounded-xl bg-muted/20 border flex items-center justify-center mb-6">
-                <p class="text-muted-foreground font-light">Imagem aqui</p>
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
+                <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
+                  <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+                </div>
+                <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Manuais de Manutenção</h2>
+                <p class="text-muted-foreground font-light leading-relaxed text-sm">
+                  Desenvolvimento de manuais de manutenção preventiva e corretiva, com procedimentos de inspeção e calibração de componentes.
+                </p>
               </div>
-              <h2 class="text-2xl font-light mb-4">Manuais de Manutenção</h2>
-              <p class="text-muted-foreground font-light leading-relaxed">
-                Desenvolvimento de manuais de manutenção preventiva e corretiva. Procedimentos de inspeção, calibração e substituição de componentes.
-              </p>
-            </div>
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-12 mb-24">
-            <div class="p-6 rounded-2xl border bg-card">
-              <div class="relative h-64 rounded-xl bg-muted/20 border flex items-center justify-center mb-6">
-                <p class="text-muted-foreground font-light">Imagem aqui</p>
-              </div>
-              <h2 class="text-2xl font-light mb-4">Procedimentos Operacionais</h2>
-              <p class="text-muted-foreground font-light leading-relaxed">
-                Elaboração de procedimentos operacionais padronizados. Instruções detalhadas para operação de sistemas, resposta a alarmes e situações de emergência.
-              </p>
             </div>
 
-            <div class="p-6 rounded-2xl border bg-card">
-              <div class="relative h-64 rounded-xl bg-muted/20 border flex items-center justify-center mb-6">
-                <p class="text-muted-foreground font-light">Imagem aqui</p>
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
+                <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
+                  <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+                </div>
+                <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Procedimentos Operacionais</h2>
+                <p class="text-muted-foreground font-light leading-relaxed text-sm">
+                  Elaboração de procedimentos operacionais padronizados, com instruções detalhadas para operação de sistemas e resposta a alarmes.
+                </p>
               </div>
-              <h2 class="text-2xl font-light mb-4">Procedimentos de Manutenção</h2>
-              <p class="text-muted-foreground font-light leading-relaxed">
-                Desenvolvimento de procedimentos de manutenção preventiva e preditiva. Cronogramas de manutenção e instruções técnicas especializadas.
-              </p>
-            </div>
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-12 mb-24">
-            <div class="p-6 rounded-2xl border bg-card">
-              <div class="relative h-64 rounded-xl bg-muted/20 border flex items-center justify-center mb-6">
-                <p class="text-muted-foreground font-light">Imagem aqui</p>
-              </div>
-              <h2 class="text-2xl font-light mb-4">Diagramas e Fluxogramas</h2>
-              <p class="text-muted-foreground font-light leading-relaxed">
-                Elaboração de diagramas técnicos e fluxogramas operacionais. Documentação visual de processos e sistemas para facilitar o entendimento das equipes.
-              </p>
             </div>
 
-            <div class="p-6 rounded-2xl border bg-card">
-              <div class="relative h-64 rounded-xl bg-muted/20 border flex items-center justify-center mb-6">
-                <p class="text-muted-foreground font-light">Imagem aqui</p>
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
+                <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
+                  <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+                </div>
+                <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Procedimentos de Manutenção</h2>
+                <p class="text-muted-foreground font-light leading-relaxed text-sm">
+                  Desenvolvimento de procedimentos de manutenção preventiva e preditiva, com cronogramas e instruções técnicas especializadas.
+                </p>
               </div>
-              <h2 class="text-2xl font-light mb-4">As-Built e Documentação Final</h2>
-              <p class="text-muted-foreground font-light leading-relaxed">
-                Elaboração de documentação as-built e documentação final de sistemas. Registros precisos das instalações executadas e configurações finais.
-              </p>
+            </div>
+
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
+                <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
+                  <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+                </div>
+                <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Diagramas e Fluxogramas</h2>
+                <p class="text-muted-foreground font-light leading-relaxed text-sm">
+                  Elaboração de diagramas técnicos e fluxogramas operacionais para documentação visual de processos e sistemas.
+                </p>
+              </div>
+            </div>
+
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
+                <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
+                  <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+                </div>
+                <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">As-Built e Documentação Final</h2>
+                <p class="text-muted-foreground font-light leading-relaxed text-sm">
+                  Elaboração de documentação as-built e documentação final de sistemas, com registros precisos das instalações executadas.
+                </p>
+              </div>
             </div>
           </div>
 
           <div class="text-center">
-            <NuxtLink to="/servicos" class="inline-flex items-center text-enprodes-blue hover:text-enprodes-blue-dark font-light">
+            <NuxtLink to="/solucoes" class="inline-flex items-center text-enprodes-blue hover:text-enprodes-blue-dark font-light">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M19 12H5M12 19l-7-7 7-7"/>
               </svg>
-              Voltar para Serviços
+              Voltar para Soluções
             </NuxtLink>
           </div>
         </div>
@@ -121,7 +140,7 @@
 import { Button } from '@/components/ui/button'
 
 useHead({
-  title: 'Manuais e Procedimentos de Operação e de Manutenção - Serviços - Enprodes',
+  title: 'Manuais e Procedimentos de Operação e de Manutenção - Soluções - Enprodes',
   meta: [
     {
       name: 'description',
