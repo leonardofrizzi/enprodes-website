@@ -73,10 +73,26 @@
         <div>
           <h3 class="text-lg font-light mb-4">Escritórios</h3>
           <ul class="space-y-3">
-            <li class="text-white/70 font-light">Rio de Janeiro, Brasil</li>
-            <li class="text-white/70 font-light">São José dos Campos, Brasil</li>
-            <li class="text-white/70 font-light">Rotterdam, Holanda</li>
-            <li class="text-white/70 font-light">Bogotá, Colômbia</li>
+            <li>
+              <NuxtLink to="/contato#rio-de-janeiro" class="text-white/70 hover:text-white font-light transition-colors">
+                Rio de Janeiro, Brasil
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/contato#sao-jose-dos-campos" class="text-white/70 hover:text-white font-light transition-colors">
+                São José dos Campos, Brasil
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/contato#rotterdam" class="text-white/70 hover:text-white font-light transition-colors">
+                Rotterdam, Holanda
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/contato#bogota" class="text-white/70 hover:text-white font-light transition-colors">
+                Bogotá, Colômbia
+              </NuxtLink>
+            </li>
           </ul>
         </div>
       </div>

@@ -49,7 +49,7 @@
           </div>
 
           <!-- Offices Section -->
-          <div>
+          <div id="escritorios">
             <h2 class="text-4xl font-light mb-12 text-center">Nossos Escritórios</h2>
 
             <!-- Office Cards -->
@@ -57,6 +57,7 @@
               <div
                 v-for="office in offices"
                 :key="office.city"
+                :id="office.id"
                 class="p-6 rounded-2xl border bg-card hover:shadow-lg transition-all cursor-pointer text-center"
                 @click="selectedOffice = office"
                 :class="{ 'ring-2 ring-enprodes-blue': selectedOffice?.city === office.city }"
@@ -67,6 +68,13 @@
                 <h3 class="font-light text-lg mb-1">{{ office.city }}</h3>
                 <p class="text-sm text-muted-foreground font-light">{{ office.country }}</p>
               </div>
+            </div>
+
+            <!-- Address and Map -->
+            <div class="mb-6 text-center">
+              <p class="text-lg text-muted-foreground font-light">
+                {{ selectedOffice.address }}
+              </p>
             </div>
 
             <!-- Map -->
@@ -89,7 +97,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { MapPin } from 'lucide-vue-next'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -97,29 +105,55 @@ import { Textarea } from '@/components/ui/textarea'
 
 const offices = [
   {
+    id: 'rio-de-janeiro',
     city: 'Rio de Janeiro',
     country: 'Brasil',
-    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235527.4358537857!2d-43.49708229453124!3d-22.906846999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20State%20of%20Rio%20de%20Janeiro%2C%20Brazil!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus'
+    address: 'Avenida Presidente Vargas 3131 Centro Rio de Janeiro RJ 20210-030',
+    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2947784615346!2d-43.19736892378051!3d-22.90682703966954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5f9e3e3e3e3f%3A0x3e3e3e3e3e3e3e3e!2sAv.%20Presidente%20Vargas%2C%203131%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020210-030!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr'
   },
   {
+    id: 'sao-jose-dos-campos',
     city: 'São José dos Campos',
     country: 'Brasil',
-    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58960.97845488282!2d-45.91922024453124!3d-23.179369999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4a8cb1c5b3c5%3A0x7f2d3c5e9c5e8c5d!2sS%C3%A3o%20Jos%C3%A9%20dos%20Campos%2C%20State%20of%20S%C3%A3o%20Paulo%2C%20Brazil!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus'
+    address: 'Av. Shishima Hifumi, 2911 - Urbanova, São José dos Campos - SP, 12244-000, Parque tecnológico-UNIVAP',
+    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.4782946834895!2d-45.86398812377366!3d-23.179385579001664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4a6b29c5b3c5%3A0x7f2d3c5e9c5e8c5d!2sAv.%20Shishima%20Hifumi%2C%202911%20-%20Urbanova%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012244-000!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr'
   },
   {
+    id: 'rotterdam',
     city: 'Rotterdam',
     country: 'Holanda',
+    address: 'Rotterdam, Holanda',
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78465.32076262847!2d4.394672999999999!3d51.924419800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b7605f54c47d%3A0x5229bbac955e5e5!2sRotterdam%2C%20Netherlands!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus'
   },
   {
+    id: 'bogota',
     city: 'Bogotá',
     country: 'Colômbia',
+    address: 'Bogotá, Colômbia',
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39277699846!2d-74.14705059453124!3d4.710988600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus'
   }
 ]
 
 // Define São José dos Campos como padrão
 const selectedOffice = ref(offices[1])
+
+// Detecta o hash da URL e seleciona o escritório correspondente
+onMounted(() => {
+  const hash = window.location.hash.substring(1) // Remove o #
+  if (hash) {
+    const office = offices.find(o => o.id === hash)
+    if (office) {
+      selectedOffice.value = office
+      // Scroll suave para a seção
+      setTimeout(() => {
+        const element = document.getElementById(hash)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }
+      }, 100)
+    }
+  }
+})
 
 useHead({
   title: 'Contato - Enprodes',
