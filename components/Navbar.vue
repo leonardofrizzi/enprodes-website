@@ -1,16 +1,16 @@
 <template>
   <header
     :class="cn(
-      'top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out',
+      'fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out',
       !isHomePage
         ? mobileMenuOpen
-          ? 'fixed bg-white shadow-xl'
-          : 'fixed bg-primary shadow-xl'
+          ? 'bg-white shadow-xl'
+          : 'bg-primary shadow-xl'
         : scrolled
-          ? 'fixed bg-primary shadow-xl'
+          ? 'bg-primary shadow-xl'
           : mobileMenuOpen
-            ? 'fixed bg-white shadow-xl'
-            : 'absolute bg-gradient-to-b from-black/40 to-transparent'
+            ? 'bg-white shadow-xl'
+            : 'bg-gradient-to-b from-black/40 to-transparent'
     )"
   >
     <div :class="cn('container mx-auto flex items-center justify-between h-20 px-6 transition-all duration-500')">
