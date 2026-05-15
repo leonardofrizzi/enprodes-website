@@ -3,7 +3,7 @@
     <div class="min-h-screen">
       <section class="pt-32 pb-24">
         <div class="container mx-auto px-6">
-          <div class="text-center mb-16">
+          <div v-reveal class="text-center mb-16">
             <h1 class="text-4xl font-light mb-4">Trabalhe Conosco</h1>
             <p class="text-lg text-muted-foreground font-light">
               Faça parte de uma equipe que está transformando a infraestrutura do Brasil e do mundo.
@@ -11,7 +11,7 @@
           </div>
 
           <div class="grid md:grid-cols-2 gap-12">
-            <div>
+            <div v-reveal>
               <h2 class="text-4xl font-light mb-6">Envie seu currículo</h2>
               <form class="space-y-6" @submit.prevent="handleSubmit">
                 <div>
@@ -109,9 +109,9 @@
               </form>
             </div>
 
-            <div>
+            <div v-reveal="{ x: 24, y: 0 }">
               <h2 class="text-4xl font-light mb-6">Por que a Enprodes?</h2>
-              <div class="grid gap-6">
+              <div v-reveal-stagger="{ stagger: 0.1, delay: 0.1 }" class="grid gap-6">
                 <div class="p-6 rounded-2xl border bg-card hover:shadow-lg transition-all">
                   <div class="flex items-start gap-4">
                     <div class="h-10 w-10 rounded-full bg-enprodes-blue/10 flex items-center justify-center flex-shrink-0">

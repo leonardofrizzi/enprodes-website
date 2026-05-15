@@ -32,6 +32,11 @@
               </NuxtLink>
             </li>
             <li>
+              <NuxtLink to="/atualizacoes" class="text-white/70 hover:text-white font-light transition-colors">
+                Atualizações
+              </NuxtLink>
+            </li>
+            <li>
               <NuxtLink to="/trabalhe-conosco" class="text-white/70 hover:text-white font-light transition-colors">
                 Trabalhe Conosco
               </NuxtLink>

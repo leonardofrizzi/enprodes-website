@@ -3,7 +3,7 @@
     <div class="min-h-screen">
       <section class="pt-32 pb-24">
         <div class="container mx-auto px-6">
-          <div class="text-center mb-16">
+          <div v-reveal class="text-center mb-16">
             <h1 class="text-4xl font-light mb-4">Sobre Nós</h1>
             <p class="text-lg text-muted-foreground font-light max-w-3xl mx-auto">
               Mais de duas décadas de experiência em projetos de engenharia de segurança para infraestrutura crítica no Brasil e no mundo.
@@ -11,7 +11,7 @@
           </div>
 
           <div class="grid md:grid-cols-2 gap-12 mb-24">
-            <div>
+            <div v-reveal>
               <h2 class="text-4xl font-light mb-6">Nossa História</h2>
               <div class="space-y-4 text-muted-foreground font-light">
                 <p>
@@ -26,7 +26,7 @@
               </div>
             </div>
 
-            <div class="relative h-96 rounded-2xl bg-muted/20 border flex items-center justify-center">
+            <div v-reveal="{ x: 24, y: 0 }" class="relative h-96 rounded-2xl bg-muted/20 border flex items-center justify-center">
               <div class="text-center text-muted-foreground">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 opacity-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
@@ -39,12 +39,14 @@
           </div>
 
           <div class="mb-24">
-            <h2 class="text-4xl font-light mb-6 text-center">Linha do Tempo</h2>
-            <p class="text-center text-muted-foreground font-light mb-12 max-w-2xl mx-auto">
-              Nossa trajetória de crescimento e grandes projetos realizados ao longo dos anos.
-            </p>
+            <div v-reveal class="text-center">
+              <h2 class="text-4xl font-light mb-6">Linha do Tempo</h2>
+              <p class="text-muted-foreground font-light mb-12 max-w-2xl mx-auto">
+                Nossa trajetória de crescimento e grandes projetos realizados ao longo dos anos.
+              </p>
+            </div>
             <div class="max-w-4xl mx-auto">
-              <div class="space-y-8">
+              <div v-reveal-stagger="{ stagger: 0.15, y: 20 }" class="space-y-8">
                 <div class="relative pl-8 border-l-2 border-enprodes-blue/30 pb-8">
                   <div class="absolute -left-2 top-0 h-4 w-4 rounded-full bg-enprodes-blue shadow-lg shadow-enprodes-blue/50"></div>
                   <div class="group bg-white border-2 border-gray-200 rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-[1.02] hover:-translate-x-2 transition-all duration-300 hover:border-enprodes-blue/50 relative overflow-hidden">
@@ -117,8 +119,8 @@
           </div>
 
           <div class="mb-24">
-            <h2 class="text-4xl font-light mb-12 text-center">Missão e Visão</h2>
-            <div class="grid md:grid-cols-2 gap-8 mb-24" style="perspective: 1000px;">
+            <h2 v-reveal class="text-4xl font-light mb-12 text-center">Missão e Visão</h2>
+            <div v-reveal-stagger="{ stagger: 0.2 }" class="grid md:grid-cols-2 gap-8 mb-24" style="perspective: 1000px;">
               <div class="group p-8 rounded-2xl border-2 border-enprodes-blue/20 bg-gradient-to-br from-white to-gray-50 shadow-[0_8px_30px_rgb(0,0,0,0.12)] backdrop-blur transition-all duration-500 hover:shadow-[0_20px_60px_rgb(0,0,0,0.25)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue hover:shadow-enprodes-blue/20 relative overflow-hidden" style="transform-style: preserve-3d;">
                 <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div class="absolute -top-10 -right-10 w-40 h-40 bg-enprodes-blue/5 rounded-full blur-3xl group-hover:bg-enprodes-blue/10 transition-all duration-500"></div>
@@ -153,140 +155,32 @@
               </div>
             </div>
 
-            <h2 class="text-4xl font-light mb-6 text-center">Nossos Valores</h2>
-            <p class="text-center text-muted-foreground font-light mb-12 max-w-2xl mx-auto">
-              Princípios fundamentais que guiam cada projeto e decisão da Enprodes.
-            </p>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div class="group p-6 rounded-xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
-                <div class="flex items-start gap-4 relative z-10">
-                  <div class="h-12 w-12 rounded-lg bg-gradient-to-br from-enprodes-blue to-enprodes-blue/80 shadow-md flex items-center justify-center flex-shrink-0 group-hover:shadow-lg group-hover:shadow-enprodes-blue/30 group-hover:scale-110 transition-all duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 class="font-light text-lg mb-2 group-hover:text-enprodes-blue transition-colors duration-300">Excelência</h4>
-                    <p class="text-sm text-muted-foreground font-light">
-                      Busca contínua pela mais alta qualidade nos projetos
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="group p-6 rounded-xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
-                <div class="flex items-start gap-4 relative z-10">
-                  <div class="h-12 w-12 rounded-lg bg-gradient-to-br from-enprodes-blue to-enprodes-blue/80 shadow-md flex items-center justify-center flex-shrink-0 group-hover:shadow-lg group-hover:shadow-enprodes-blue/30 group-hover:scale-110 transition-all duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                      <path d="M2 17l10 5 10-5"/>
-                      <path d="M2 12l10 5 10-5"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 class="font-light text-lg mb-2 group-hover:text-enprodes-blue transition-colors duration-300">Inovação</h4>
-                    <p class="text-sm text-muted-foreground font-light">
-                      Uso de tecnologias avançadas para soluções eficientes
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="group p-6 rounded-xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
-                <div class="flex items-start gap-4 relative z-10">
-                  <div class="h-12 w-12 rounded-lg bg-gradient-to-br from-enprodes-blue to-enprodes-blue/80 shadow-md flex items-center justify-center flex-shrink-0 group-hover:shadow-lg group-hover:shadow-enprodes-blue/30 group-hover:scale-110 transition-all duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 class="font-light text-lg mb-2 group-hover:text-enprodes-blue transition-colors duration-300">Segurança</h4>
-                    <p class="text-sm text-muted-foreground font-light">
-                      Prioridade máxima na segurança dos usuários
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="md:col-span-2 lg:col-span-3 flex justify-center">
-                <div class="grid md:grid-cols-2 gap-6 w-full lg:w-2/3">
-                  <div class="group p-6 rounded-xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
-                    <div class="flex items-start gap-4 relative z-10">
-                      <div class="h-12 w-12 rounded-lg bg-gradient-to-br from-enprodes-blue to-enprodes-blue/80 shadow-md flex items-center justify-center flex-shrink-0 group-hover:shadow-lg group-hover:shadow-enprodes-blue/30 group-hover:scale-110 transition-all duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-                          <circle cx="12" cy="12" r="3"/>
-                        </svg>
-                      </div>
-                      <div>
-                        <h4 class="font-light text-lg mb-2 group-hover:text-enprodes-blue transition-colors duration-300">Transparência</h4>
-                        <p class="text-sm text-muted-foreground font-light">
-                          Relacionamentos construídos com confiança e honestidade
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="group p-6 rounded-xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
-                    <div class="flex items-start gap-4 relative z-10">
-                      <div class="h-12 w-12 rounded-lg bg-gradient-to-br from-enprodes-blue to-enprodes-blue/80 shadow-md flex items-center justify-center flex-shrink-0 group-hover:shadow-lg group-hover:shadow-enprodes-blue/30 group-hover:scale-110 transition-all duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                          <circle cx="9" cy="7" r="4"/>
-                          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>
-                      </div>
-                      <div>
-                        <h4 class="font-light text-lg mb-2 group-hover:text-enprodes-blue transition-colors duration-300">Sustentabilidade</h4>
-                        <p class="text-sm text-muted-foreground font-light">
-                          Compromisso com práticas que preservam o meio ambiente e promovem o desenvolvimento responsável
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div v-reveal class="text-center">
+              <h2 class="text-4xl font-light mb-6">Nossos Valores</h2>
+              <p class="text-muted-foreground font-light mb-12 max-w-2xl mx-auto">
+                Princípios fundamentais que guiam cada projeto e decisão da Enprodes.
+              </p>
+            </div>
+            <div v-reveal-stagger class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <FeatureCard
+                v-for="value in values"
+                :key="value.title"
+                :title="value.title"
+                :description="value.description"
+                :icon="value.icon"
+              />
             </div>
           </div>
 
           <div id="clientes">
-            <h2 class="text-4xl font-light mb-6 text-center">Nossos Clientes</h2>
-            <p class="text-center text-muted-foreground font-light mb-12 max-w-2xl mx-auto">
-              Trabalhamos com as principais empresas e órgãos públicos do Brasil e do mundo, entregando projetos de alta complexidade e impacto.
-            </p>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-              <div
-                v-for="client in clients"
-                :key="client.name"
-                class="group aspect-square rounded-xl border-2 border-gray-200 bg-white hover:shadow-lg hover:border-enprodes-blue/50 transition-all duration-300 flex items-center justify-center p-6 relative overflow-hidden"
-              >
-                <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <img
-                  v-if="client.logo"
-                  :src="client.logo"
-                  :alt="client.name"
-                  class="relative z-10 w-full h-full object-contain group-hover:scale-110 transition-all duration-300"
-                />
-                <div v-else class="text-center text-muted-foreground relative z-10">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto mb-2 opacity-30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                    <circle cx="8.5" cy="8.5" r="1.5"/>
-                    <polyline points="21 15 16 10 5 21"/>
-                  </svg>
-                  <p class="text-xs font-light opacity-50">{{ client.name }}</p>
-                </div>
-              </div>
+            <div v-reveal class="text-center">
+              <h2 class="text-4xl font-light mb-6">Nossos Clientes</h2>
+              <p class="text-muted-foreground font-light mb-12 max-w-2xl mx-auto">
+                Trabalhamos com as principais empresas e órgãos públicos do Brasil e do mundo, entregando projetos de alta complexidade e impacto.
+              </p>
+            </div>
+            <div v-reveal-stagger="{ stagger: 0.04, y: 16 }" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+              <ClientCard v-for="client in clients" :key="client.name" :client="client" />
             </div>
           </div>
         </div>
@@ -296,32 +190,37 @@
 </template>
 
 <script setup lang="ts">
-const clients = [
-  { name: 'Arteris', logo: '/arteris.webp' },
-  { name: 'CCR', logo: '/ccr.webp' },
-  { name: 'Tamoios', logo: '/tamoios.webp' },
-  { name: 'Cliente 4', logo: '/odebrecht.webp' },
-  { name: 'Cliente 5', logo: '/smartluz.webp' },
-  { name: 'Cliente 6', logo: '/viario.webp' },
-  { name: 'Cliente 7', logo: '/nova381.webp' },
-  { name: 'Cliente 8', logo: '/motiva.webp' },
-  { name: 'Cliente 9', logo: '/ecorodovias.webp' },
-  { name: 'Cliente 10', logo: '/portonovo.webp' },
-  { name: 'Cliente 11', logo: '/rota.webp' },
-  { name: 'Cliente 12', logo: '/coqueiros.webp' },
-  { name: 'Cliente 13', logo: '/rio.webp' },
-  { name: 'Cliente 14', logo: '/parana.webp' },
-  { name: 'Cliente 15', logo: '/spmar.webp' },
-  { name: 'Cliente 16', logo: '/via040.webp' },
-  { name: 'Cliente 17', logo: '/metrorio.svg' },
-  { name: 'Cliente 18', logo: '/bahia.webp' },
-  { name: 'Cliente 19', logo: '/lamsac.webp' },
-  { name: 'Cliente 20', logo: '/lamsa.webp' },
-  { name: 'Cliente 21', logo: '/viapar.webp' },
-  { name: 'Cliente 22', logo: '/crt.webp' },
-  { name: 'Cliente 23', logo: '/eterc.webp' },
-  { name: 'Cliente 24', logo: '/egtc.webp' },
-  { name: 'Cliente 25', logo: '/br.webp' }
+import { Award, Layers, Shield, Eye, Leaf } from 'lucide-vue-next'
+
+const { list } = useClients()
+const clients = list()
+
+const values = [
+  {
+    title: 'Excelência',
+    description: 'Busca contínua pela mais alta qualidade nos projetos',
+    icon: Award
+  },
+  {
+    title: 'Inovação',
+    description: 'Uso de tecnologias avançadas para soluções eficientes',
+    icon: Layers
+  },
+  {
+    title: 'Segurança',
+    description: 'Prioridade máxima na segurança dos usuários',
+    icon: Shield
+  },
+  {
+    title: 'Transparência',
+    description: 'Relacionamentos construídos com confiança e honestidade',
+    icon: Eye
+  },
+  {
+    title: 'Sustentabilidade',
+    description: 'Compromisso com práticas que preservam o meio ambiente e promovem o desenvolvimento responsável',
+    icon: Leaf
+  }
 ]
 
 useHead({

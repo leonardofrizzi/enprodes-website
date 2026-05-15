@@ -15,15 +15,17 @@
         <div class="absolute inset-0 bg-black/50" />
 
         <div class="container mx-auto px-6 relative z-10">
-          <div class="max-w-4xl space-y-6">
+          <div ref="heroContent" class="max-w-4xl space-y-6">
             <h1 class="text-5xl md:text-7xl font-light text-white leading-tight">
               Engenharia de confiança. Soluções de excelência.
             </h1>
 
             <div class="pt-8">
-              <Button class="px-8 font-light">
-                Ver projetos
-              </Button>
+              <a href="#projetos">
+                <Button class="px-8 font-light">
+                  Ver projetos
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -31,14 +33,14 @@
 
       <section class="py-24">
         <div class="container mx-auto px-6">
-          <div class="text-center max-w-2xl mx-auto mb-16">
+          <div v-reveal class="text-center max-w-2xl mx-auto mb-16">
             <h2 class="text-4xl font-light mb-4">Nossas Soluções</h2>
             <p class="text-lg text-muted-foreground font-light">
               Oferecemos soluções completas de engenharia para infraestrutura crítica
             </p>
           </div>
 
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div v-reveal-stagger class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div
               v-for="service in services"
               :key="service.title"
@@ -57,7 +59,7 @@
             </div>
           </div>
 
-          <div class="text-center mt-12">
+          <div v-reveal class="text-center mt-12">
             <NuxtLink to="/solucoes">
               <Button class="px-8 font-light">
                 Ver todas as soluções
@@ -70,7 +72,7 @@
       <section class="py-24">
         <div class="container mx-auto px-6">
           <div class="grid lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
+            <div v-reveal class="space-y-6">
               <h2 class="text-4xl font-light">Quem Somos</h2>
               <p class="text-lg text-muted-foreground leading-relaxed">
                 Consultoria independente com sede em Rotterdam, Holanda. Iniciamos as atividades em 2008, com atuação no Brasil desde 2016.
@@ -87,107 +89,68 @@
               </div>
             </div>
 
-            <div class="relative h-96 rounded-2xl border-2 border-dashed border-muted-foreground/30 flex items-center justify-center bg-muted/10">
+            <div v-reveal="{ x: 24, y: 0 }" class="relative h-96 rounded-2xl border-2 border-dashed border-muted-foreground/30 flex items-center justify-center bg-muted/10">
               <p class="text-muted-foreground font-light">Imagem aqui</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="py-24 bg-gray-50">
+      <section id="projetos" class="py-24 bg-gray-50 scroll-mt-20">
         <div class="container mx-auto px-6">
-          <div class="text-center mb-12">
+          <div v-reveal class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-4xl font-light mb-4">Nossos Projetos</h2>
+            <p class="text-lg text-muted-foreground font-light">
+              Uma seleção de projetos entregues pela Enprodes ao longo dos anos.
+            </p>
+          </div>
+
+          <div v-reveal>
+            <ProjectsCarousel />
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24">
+        <div class="container mx-auto px-6">
+          <div v-reveal class="text-center mb-12">
             <h2 class="text-4xl font-light mb-4">Nossos Clientes</h2>
             <p class="text-lg text-muted-foreground font-light max-w-2xl mx-auto">
               Trabalhamos com as principais empresas e órgãos públicos do Brasil e do mundo
             </p>
           </div>
 
-          <div class="relative">
-            <div class="max-w-6xl mx-auto">
-              <Swiper
-                :modules="[SwiperNavigation, SwiperAutoplay]"
-                :slides-per-view="1"
-                :space-between="20"
-                :loop="true"
-                :autoplay="{ delay: 3000, disableOnInteraction: false }"
-                :navigation="{
-                  nextEl: '.swiper-button-next-custom',
-                  prevEl: '.swiper-button-prev-custom',
-                }"
-                :breakpoints="{
-                  640: { slidesPerView: 2 },
-                  768: { slidesPerView: 3 },
-                  1024: { slidesPerView: 5 }
-                }"
-                class="!px-0"
-              >
-              <SwiperSlide v-for="client in clients" :key="client.name">
-                <NuxtLink to="/sobre#clientes">
-                  <div class="group aspect-square rounded-xl border-2 border-gray-200 bg-white hover:shadow-lg hover:border-enprodes-blue/50 transition-all duration-300 flex items-center justify-center p-6 relative overflow-hidden cursor-pointer">
-                    <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <img
-                      v-if="client.logo"
-                      :src="client.logo"
-                      :alt="client.name"
-                      class="relative z-10 w-full h-full object-contain group-hover:scale-110 transition-all duration-300"
-                    />
-                    <div v-else class="text-center text-muted-foreground relative z-10">
-                      <div class="h-12 w-12 mx-auto mb-2 opacity-30 flex items-center justify-center">
-                        <Building2 class="h-full w-full" />
-                      </div>
-                      <p class="text-xs font-light opacity-50">{{ client.name }}</p>
-                    </div>
-                  </div>
-                </NuxtLink>
-              </SwiperSlide>
-              </Swiper>
-            </div>
-
-            <button
-              class="swiper-button-prev-custom hidden lg:flex absolute left-6 top-1/2 -translate-y-1/2 z-20 h-10 w-10 rounded-full border-2 border-gray-200 bg-white hover:bg-gray-100 hover:border-enprodes-blue/50 disabled:opacity-50 disabled:cursor-not-allowed items-center justify-center transition-all shadow-md hover:shadow-lg"
-            >
-              <ChevronLeft class="w-5 h-5" />
-            </button>
-            <button
-              class="swiper-button-next-custom hidden lg:flex absolute right-6 top-1/2 -translate-y-1/2 z-20 h-10 w-10 rounded-full border-2 border-gray-200 bg-white hover:bg-gray-100 hover:border-enprodes-blue/50 disabled:opacity-50 disabled:cursor-not-allowed items-center justify-center transition-all shadow-md hover:shadow-lg"
-            >
-              <ChevronRight class="w-5 h-5" />
-            </button>
+          <div v-reveal>
+            <ClientsCarousel />
           </div>
         </div>
       </section>
 
-      <section class="py-24 bg-enprodes-gray">
-        <div class="container mx-auto px-6 text-center">
-          <div class="max-w-3xl mx-auto space-y-6">
-            <h2 class="text-4xl font-light text-white">
-              Vamos conversar sobre seu projeto?
-            </h2>
-            <p class="text-xl text-white/80 font-light">
-              Entre em contato com nossa equipe de especialistas.
-            </p>
-            <div class="pt-4">
-              <NuxtLink to="/contato">
-                <Button class="px-8 h-12 font-light">
-                  Entrar em contato
-                </Button>
-              </NuxtLink>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CtaSection />
     </div>
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
-import { Route, Building2, Zap, Users, ChevronLeft, ChevronRight } from 'lucide-vue-next'
+import { ref, onMounted } from 'vue'
+import { Route, Building2, Zap, Users } from 'lucide-vue-next'
 import { Button } from '@/components/ui/button'
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Navigation as SwiperNavigation, Autoplay as SwiperAutoplay } from 'swiper/modules'
-import 'swiper/css'
-import 'swiper/css/navigation'
+
+const heroContent = ref<HTMLElement | null>(null)
+
+onMounted(() => {
+  const { $gsap } = useNuxtApp()
+  if (!$gsap || !heroContent.value) return
+  const children = Array.from(heroContent.value.children) as HTMLElement[]
+  $gsap.from(children, {
+    opacity: 0,
+    y: 30,
+    duration: 1,
+    stagger: 0.18,
+    ease: 'power2.out',
+    delay: 0.2
+  })
+})
 
 const services = [
   {
@@ -211,33 +174,4 @@ const services = [
     icon: Users
   }
 ]
-
-const clients = [
-  { name: 'Arteris', logo: '/arteris.webp' },
-  { name: 'CCR', logo: '/ccr.webp' },
-  { name: 'Tamoios', logo: '/tamoios.webp' },
-  { name: 'Odebrecht', logo: '/odebrecht.webp' },
-  { name: 'Smartluz', logo: '/smartluz.webp' },
-  { name: 'Viário', logo: '/viario.webp' },
-  { name: 'Nova 381', logo: '/nova381.webp' },
-  { name: 'Motiva', logo: '/motiva.webp' },
-  { name: 'Ecorodovias', logo: '/ecorodovias.webp' },
-  { name: 'Porto Novo', logo: '/portonovo.webp' },
-  { name: 'Rota', logo: '/rota.webp' },
-  { name: 'Coqueiros', logo: '/coqueiros.webp' },
-  { name: 'Rio', logo: '/rio.webp' },
-  { name: 'Paraná', logo: '/parana.webp' },
-  { name: 'SPMar', logo: '/spmar.webp' },
-  { name: 'Via 040', logo: '/via040.webp' },
-  { name: 'Metrô Rio', logo: '/metrorio.svg' },
-  { name: 'Bahia', logo: '/bahia.webp' },
-  { name: 'Lamsac', logo: '/lamsac.webp' },
-  { name: 'Lamsa', logo: '/lamsa.webp' },
-  { name: 'Viapar', logo: '/viapar.webp' },
-  { name: 'CRT', logo: '/crt.webp' },
-  { name: 'Eterc', logo: '/eterc.webp' },
-  { name: 'EGTC', logo: '/egtc.webp' },
-  { name: 'BR', logo: '/br.webp' }
-]
-
 </script>

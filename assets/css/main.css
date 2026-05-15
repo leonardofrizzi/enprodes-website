@@ -13,7 +13,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 20%;
 
-    --primary: 197 31% 55%;
+    --primary: 221 83% 53%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 40%;
@@ -22,15 +22,15 @@
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 197 31% 65%;
-    --accent-foreground: 0 0% 20%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 197 31% 55%;
+    --ring: 221 83% 53%;
 
     --radius: 0.5rem;
   }
@@ -77,13 +77,13 @@
 
 @layer utilities {
   .bg-enprodes-blue {
-    background-color: #7ca4b4;
+    background-color: #2563eb;
   }
   .bg-enprodes-blue-light {
-    background-color: #9bc1cf;
+    background-color: #3b82f6;
   }
   .bg-enprodes-blue-dark {
-    background-color: #5d8a9a;
+    background-color: #1d4ed8;
   }
   .bg-enprodes-gray {
     background-color: #666666;
@@ -96,13 +96,13 @@
   }
 
   .text-enprodes-blue {
-    color: #7ca4b4;
+    color: #2563eb;
   }
   .text-enprodes-blue-light {
-    color: #9bc1cf;
+    color: #3b82f6;
   }
   .text-enprodes-blue-dark {
-    color: #5d8a9a;
+    color: #1d4ed8;
   }
   .text-enprodes-gray {
     color: #666666;
@@ -115,22 +115,22 @@
   }
 
   .border-enprodes-blue {
-    border-color: #7ca4b4;
+    border-color: #2563eb;
   }
   .border-enprodes-blue-light {
-    border-color: #9bc1cf;
+    border-color: #3b82f6;
   }
   .border-enprodes-blue-dark {
-    border-color: #5d8a9a;
+    border-color: #1d4ed8;
   }
 
   .hover\:bg-enprodes-blue:hover {
-    background-color: #7ca4b4;
+    background-color: #2563eb;
   }
   .hover\:bg-enprodes-blue-dark:hover {
-    background-color: #5d8a9a;
+    background-color: #1d4ed8;
   }
   .hover\:text-enprodes-blue:hover {
-    color: #7ca4b4;
+    color: #2563eb;
   }
 }

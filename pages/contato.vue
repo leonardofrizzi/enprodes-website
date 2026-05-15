@@ -3,7 +3,7 @@
     <div class="min-h-screen">
       <section class="pt-32 pb-24">
         <div class="container mx-auto px-6">
-          <div class="text-center mb-16">
+          <div v-reveal class="text-center mb-16">
             <h1 class="text-4xl font-light mb-4">Contato</h1>
             <p class="text-lg text-muted-foreground font-light">
               Entre em contato conosco. Estamos prontos para ajudar no seu próximo projeto.
@@ -12,7 +12,7 @@
 
           <!-- Form Section -->
           <div class="grid md:grid-cols-2 gap-12 mb-24">
-            <div>
+            <div v-reveal>
               <h2 class="text-4xl font-light mb-6">Envie uma mensagem</h2>
               <form class="space-y-6">
                 <div>
@@ -50,10 +50,10 @@
 
           <!-- Offices Section -->
           <div id="escritorios">
-            <h2 class="text-4xl font-light mb-12 text-center">Nossos Escritórios</h2>
+            <h2 v-reveal class="text-4xl font-light mb-12 text-center">Nossos Escritórios</h2>
 
             <!-- Office Cards -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <div v-reveal-stagger="{ stagger: 0.08 }" class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
               <div
                 v-for="office in offices"
                 :key="office.city"

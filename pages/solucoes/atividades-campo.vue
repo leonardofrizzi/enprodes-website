@@ -85,31 +85,12 @@
         </div>
       </section>
 
-      <section class="py-24 bg-enprodes-gray">
-        <div class="container mx-auto px-6 text-center">
-          <div class="max-w-3xl mx-auto space-y-6">
-            <h2 class="text-4xl font-light text-white">
-              Vamos conversar sobre seu projeto?
-            </h2>
-            <p class="text-xl text-white/80 font-light">
-              Entre em contato com nossa equipe de especialistas.
-            </p>
-            <div class="pt-4">
-              <NuxtLink to="/contato">
-                <Button class=" px-8 h-12 font-light">
-                  Entrar em contato
-                </Button>
-              </NuxtLink>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CtaSection />
     </div>
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
-import { Button } from '@/components/ui/button'
 
 useHead({
   title: 'Atividades de Campo - Soluções - Enprodes',

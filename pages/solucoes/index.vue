@@ -3,14 +3,14 @@
     <div class="min-h-screen">
       <section class="pt-32 pb-24">
         <div class="container mx-auto px-6">
-          <div class="text-center mb-16">
+          <div v-reveal class="text-center mb-16">
             <h1 class="text-4xl font-light mb-4">Nossas Soluções</h1>
             <p class="text-lg text-muted-foreground font-light max-w-3xl mx-auto">
               Soluções completas em engenharia de segurança para infraestrutura crítica, do planejamento à operação.
             </p>
           </div>
 
-          <div class="grid md:grid-cols-2 gap-12 mb-24">
+          <div v-reveal-stagger="{ stagger: 0.1 }" class="grid md:grid-cols-2 gap-12 mb-24">
             <div
               v-for="service in services"
               :key="service.slug"
@@ -45,25 +45,7 @@
         </div>
       </section>
 
-      <section class="py-24 bg-enprodes-gray">
-        <div class="container mx-auto px-6 text-center">
-          <div class="max-w-3xl mx-auto space-y-6">
-            <h2 class="text-4xl font-light text-white">
-              Vamos conversar sobre seu projeto?
-            </h2>
-            <p class="text-xl text-white/80 font-light">
-              Entre em contato com nossa equipe de especialistas.
-            </p>
-            <div class="pt-4">
-              <NuxtLink to="/contato">
-                <Button class=" px-8 h-12 font-light">
-                  Entrar em contato
-                </Button>
-              </NuxtLink>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CtaSection />
     </div>
   </NuxtLayout>
 </template>

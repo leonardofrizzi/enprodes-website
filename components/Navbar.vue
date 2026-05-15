@@ -164,6 +164,7 @@ const navItems = [
   { label: 'Início', href: '/' },
   { label: 'Sobre', href: '/sobre' },
   { label: 'Soluções', href: '/solucoes' },
+  { label: 'Atualizações', href: '/atualizacoes' },
   { label: 'Trabalhe Conosco', href: '/trabalhe-conosco' },
   { label: 'Contato', href: '/contato' },
 ]
