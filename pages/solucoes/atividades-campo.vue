@@ -11,8 +11,13 @@
           </div>
 
           <div class="mb-24">
-            <div class="relative h-96 rounded-2xl bg-muted/20 border flex items-center justify-center mb-12">
-              <p class="text-muted-foreground font-light">Imagem: Atividades de Campo Overview</p>
+            <div class="relative h-96 rounded-2xl border overflow-hidden mb-12">
+              <img
+                src="/atividadesdecampo.webp"
+                alt="Atividades de Campo - Enprodes"
+                class="absolute inset-0 h-full w-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
 
@@ -21,8 +26,13 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-                <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
-                  <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+                <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+                  <img
+                    src="/atividades-campo/at.svg"
+                    alt="Acompanhamento Técnico de Obra"
+                    class="absolute inset-0 h-full w-full object-contain"
+                    loading="lazy"
+                  />
                 </div>
                 <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Acompanhamento Técnico de Obra</h2>
                 <p class="text-muted-foreground font-light leading-relaxed text-sm">
@@ -35,8 +45,13 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-                <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
-                  <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+                <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+                  <img
+                    src="/atividades-campo/comissionamento.svg"
+                    alt="Comissionamento"
+                    class="absolute inset-0 h-full w-full object-contain"
+                    loading="lazy"
+                  />
                 </div>
                 <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Comissionamento</h2>
                 <p class="text-muted-foreground font-light leading-relaxed text-sm">
@@ -49,8 +64,13 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-                <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
-                  <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+                <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+                  <img
+                    src="/atividades-campo/ins.svg"
+                    alt="Inspeção Especial"
+                    class="absolute inset-0 h-full w-full object-contain"
+                    loading="lazy"
+                  />
                 </div>
                 <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Inspeção Especial</h2>
                 <p class="text-muted-foreground font-light leading-relaxed text-sm">
@@ -63,12 +83,57 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-                <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
-                  <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+                <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+                  <img
+                    src="/atividades-campo/laudo.svg"
+                    alt="Laudos Técnicos"
+                    class="absolute inset-0 h-full w-full object-contain"
+                    loading="lazy"
+                  />
                 </div>
                 <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Laudos Técnicos</h2>
                 <p class="text-muted-foreground font-light leading-relaxed text-sm">
                   Elaboração de laudos técnicos especializados para sistemas e equipamentos, com documentação completa de testes e validações.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
+                <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+                  <img
+                    src="/atividades-campo/com.svg"
+                    alt="Comissionamento"
+                    class="absolute inset-0 h-full w-full object-contain"
+                    loading="lazy"
+                  />
+                </div>
+                <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Comissionamento</h2>
+                <p class="text-muted-foreground font-light leading-relaxed text-sm">
+                  Comissionamento de sistemas e equipamentos com ensaios funcionais, integração e validação operacional em campo.
+                </p>
+              </div>
+            </div>
+
+            <div class="group p-6 rounded-2xl border-2 border-gray-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:scale-105 hover:-translate-y-2 hover:border-enprodes-blue/50 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
+              <div class="relative z-10">
+                <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+                  <img
+                    src="/atividades-campo/suporte.svg"
+                    alt="Suporte Técnico"
+                    class="absolute inset-0 h-full w-full object-contain"
+                    loading="lazy"
+                  />
+                </div>
+                <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Suporte Técnico</h2>
+                <p class="text-muted-foreground font-light leading-relaxed text-sm">
+                  Suporte técnico remoto e presencial para equipes operacionais, com resolução de dúvidas e diagnóstico de falhas.
                 </p>
               </div>
             </div>

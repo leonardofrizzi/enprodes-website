@@ -11,8 +11,13 @@
           </div>
 
           <div class="mb-24">
-            <div v-reveal class="relative h-96 rounded-2xl bg-muted/20 border flex items-center justify-center mb-12">
-              <p class="text-muted-foreground font-light">Imagem: Projetos de Engenharia Overview</p>
+            <div v-reveal class="relative h-96 rounded-2xl border overflow-hidden mb-12">
+              <img
+                src="/projeng.webp"
+                alt="Projetos de Engenharia - Enprodes"
+                class="absolute inset-0 h-full w-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
 
@@ -116,8 +121,13 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-              <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
-                <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+              <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+                <img
+                  src="/eng/aes.svg"
+                  alt="Automação e Supervisório"
+                  class="absolute inset-0 h-full w-full object-contain"
+                  loading="lazy"
+                />
               </div>
               <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Automação e Supervisório</h2>
               <p class="text-muted-foreground font-light leading-relaxed text-sm">

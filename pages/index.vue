@@ -89,8 +89,13 @@
               </div>
             </div>
 
-            <div v-reveal="{ x: 24, y: 0 }" class="relative h-96 rounded-2xl border-2 border-dashed border-muted-foreground/30 flex items-center justify-center bg-muted/10">
-              <p class="text-muted-foreground font-light">Imagem aqui</p>
+            <div v-reveal="{ x: 24, y: 0 }" class="relative h-96 rounded-2xl border overflow-hidden">
+              <img
+                src="/quemsomos.webp"
+                alt="Quem somos - Enprodes"
+                class="absolute inset-0 h-full w-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

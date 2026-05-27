@@ -19,8 +19,15 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-              <div class="relative h-48 rounded-xl bg-muted/20 border mb-6 flex items-center justify-center">
-                <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+              <div class="relative h-48 -mt-6 -mx-6 mb-6 overflow-hidden bg-muted/20 flex items-center justify-center">
+                <img
+                  v-if="service.image"
+                  :src="service.image"
+                  :alt="service.title"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                />
+                <p v-else class="text-sm text-muted-foreground font-light">Imagem aqui</p>
               </div>
 
               <h2 class="text-2xl font-light mb-4 group-hover:text-enprodes-blue transition-colors duration-300">
@@ -62,12 +69,14 @@ const services = [
   {
     slug: 'projetos-engenharia',
     title: 'Projetos de Engenharia',
-    description: 'Desenvolvimento de projetos executivos multidisciplinares para infraestruturas críticas, desde estudos de viabilidade até metodologia BIM, com foco em segurança e eficiência operacional.'
+    description: 'Desenvolvimento de projetos executivos multidisciplinares para infraestruturas críticas, desde estudos de viabilidade até metodologia BIM, com foco em segurança e eficiência operacional.',
+    image: '/projeng.webp'
   },
   {
     slug: 'atividades-campo',
     title: 'Atividades de Campo',
-    description: 'Levantamentos topográficos, inspeções técnicas, comissionamento de sistemas, testes de campo e validação de instalações de equipamentos de segurança.'
+    description: 'Levantamentos topográficos, inspeções técnicas, comissionamento de sistemas, testes de campo e validação de instalações de equipamentos de segurança.',
+    image: '/atividadesdecampo.webp'
   },
   {
     slug: 'documentacao-treinamentos',

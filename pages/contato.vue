@@ -42,8 +42,13 @@
             </div>
 
             <div>
-              <div class="relative h-full min-h-[500px] rounded-2xl bg-muted/20 border flex items-center justify-center">
-                <p class="text-muted-foreground font-light">Imagem: Escritório ou equipe</p>
+              <div class="relative h-full min-h-[500px] rounded-2xl border overflow-hidden">
+                <img
+                  src="/contato.webp"
+                  alt="Equipe Enprodes"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -62,8 +67,13 @@
                 @click="selectedOffice = office"
                 :class="{ 'ring-2 ring-enprodes-blue': selectedOffice?.city === office.city }"
               >
-                <div class="h-12 w-12 rounded-full bg-enprodes-blue/10 flex items-center justify-center mx-auto mb-4">
-                  <MapPin class="h-6 w-6 text-enprodes-blue" />
+                <div class="h-12 w-12 rounded-full overflow-hidden flex items-center justify-center mx-auto mb-4 border bg-white">
+                  <img
+                    :src="`https://flagcdn.com/w80/${office.countryCode}.png`"
+                    :alt="`Bandeira ${office.country}`"
+                    class="h-full w-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
                 <h3 class="font-light text-lg mb-1">{{ office.city }}</h3>
                 <p class="text-sm text-muted-foreground font-light">{{ office.country }}</p>
@@ -98,7 +108,6 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import { MapPin } from 'lucide-vue-next'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -108,6 +117,7 @@ const offices = [
     id: 'rio-de-janeiro',
     city: 'Rio de Janeiro',
     country: 'Brasil',
+    countryCode: 'br',
     address: 'Avenida Presidente Vargas 3131 Centro Rio de Janeiro RJ 20210-030',
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2947784615346!2d-43.19736892378051!3d-22.90682703966954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5f9e3e3e3e3f%3A0x3e3e3e3e3e3e3e3e!2sAv.%20Presidente%20Vargas%2C%203131%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020210-030!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr'
   },
@@ -115,6 +125,7 @@ const offices = [
     id: 'sao-jose-dos-campos',
     city: 'São José dos Campos',
     country: 'Brasil',
+    countryCode: 'br',
     address: 'Av. Shishima Hifumi, 2911 - Urbanova, São José dos Campos - SP, 12244-000, Parque tecnológico-UNIVAP',
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.4782946834895!2d-45.86398812377366!3d-23.179385579001664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4a6b29c5b3c5%3A0x7f2d3c5e9c5e8c5d!2sAv.%20Shishima%20Hifumi%2C%202911%20-%20Urbanova%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012244-000!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr'
   },
@@ -122,6 +133,7 @@ const offices = [
     id: 'rotterdam',
     city: 'Rotterdam',
     country: 'Holanda',
+    countryCode: 'nl',
     address: 'Rotterdam, Holanda',
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78465.32076262847!2d4.394672999999999!3d51.924419800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b7605f54c47d%3A0x5229bbac955e5e5!2sRotterdam%2C%20Netherlands!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus'
   },
@@ -129,6 +141,7 @@ const offices = [
     id: 'bogota',
     city: 'Bogotá',
     country: 'Colômbia',
+    countryCode: 'co',
     address: 'Bogotá, Colômbia',
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39277699846!2d-74.14705059453124!3d4.710988600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus'
   }

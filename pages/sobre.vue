@@ -26,15 +26,13 @@
               </div>
             </div>
 
-            <div v-reveal="{ x: 24, y: 0 }" class="relative h-96 rounded-2xl bg-muted/20 border flex items-center justify-center">
-              <div class="text-center text-muted-foreground">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 opacity-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                  <circle cx="8.5" cy="8.5" r="1.5"/>
-                  <polyline points="21 15 16 10 5 21"/>
-                </svg>
-                <p class="font-light">Imagem: História da empresa</p>
-              </div>
+            <div v-reveal="{ x: 24, y: 0 }" class="relative h-96 rounded-2xl border overflow-hidden">
+              <img
+                src="/sobrenos.webp"
+                alt="Sobre a Enprodes"
+                class="absolute inset-0 h-full w-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
 
