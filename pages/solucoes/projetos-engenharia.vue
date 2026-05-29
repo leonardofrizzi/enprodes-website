@@ -121,11 +121,11 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-              <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+              <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
                 <img
                   src="/eng/aes.svg"
                   alt="Automação e Supervisório"
-                  class="absolute inset-0 h-full w-full object-contain"
+                  class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
                   loading="lazy"
                 />
               </div>
@@ -140,11 +140,11 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-              <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+              <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
                 <img
                   src="/eng/eee.svg"
                   alt="Elétrica e Eletrônica"
-                  class="absolute inset-0 h-full w-full object-contain"
+                  class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
                   loading="lazy"
                 />
               </div>
@@ -159,11 +159,11 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-              <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+              <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
                 <img
                   src="/eng/me.svg"
                   alt="Mecânica"
-                  class="absolute inset-0 h-full w-full object-contain"
+                  class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
                   loading="lazy"
                 />
               </div>
@@ -178,11 +178,11 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-              <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+              <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
                 <img
                   src="/eng/ve.svg"
                   alt="Ventilação"
-                  class="absolute inset-0 h-full w-full object-contain"
+                  class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
                   loading="lazy"
                 />
               </div>
@@ -197,8 +197,13 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-              <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
-                <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+              <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
+                <img
+                  src="/eng/hi.svg"
+                  alt="Combate a Incêndio"
+                  class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
+                  loading="lazy"
+                />
               </div>
               <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Combate a Incêndio</h2>
               <p class="text-muted-foreground font-light leading-relaxed text-sm">
@@ -211,8 +216,13 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-              <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
-                <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+              <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
+                <img
+                  src="/eng/est.svg"
+                  alt="Estrutural"
+                  class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
+                  loading="lazy"
+                />
               </div>
               <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Estrutural</h2>
               <p class="text-muted-foreground font-light leading-relaxed text-sm">
@@ -225,8 +235,13 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-              <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
-                <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+              <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
+                <img
+                  src="/eng/arq.svg"
+                  alt="Arquitetônico"
+                  class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
+                  loading="lazy"
+                />
               </div>
               <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Arquitetônico</h2>
               <p class="text-muted-foreground font-light leading-relaxed text-sm">
@@ -239,8 +254,13 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-              <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
-                <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+              <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
+                <img
+                  src="/eng/go.svg"
+                  alt="Hidráulico"
+                  class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
+                  loading="lazy"
+                />
               </div>
               <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Hidráulico</h2>
               <p class="text-muted-foreground font-light leading-relaxed text-sm">
@@ -253,8 +273,13 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-              <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
-                <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+              <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
+                <img
+                  src="/eng/re.svg"
+                  alt="Rede e Transmissão de Dados"
+                  class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
+                  loading="lazy"
+                />
               </div>
               <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Rede e Transmissão de Dados</h2>
               <p class="text-muted-foreground font-light leading-relaxed text-sm">

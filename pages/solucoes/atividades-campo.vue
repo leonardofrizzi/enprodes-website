@@ -26,11 +26,11 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-                <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+                <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
                   <img
                     src="/atividades-campo/at.svg"
                     alt="Acompanhamento Técnico de Obra"
-                    class="absolute inset-0 h-full w-full object-contain"
+                    class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
                     loading="lazy"
                   />
                 </div>
@@ -45,11 +45,11 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-                <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+                <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
                   <img
                     src="/atividades-campo/comissionamento.svg"
                     alt="Comissionamento"
-                    class="absolute inset-0 h-full w-full object-contain"
+                    class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
                     loading="lazy"
                   />
                 </div>
@@ -64,11 +64,11 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-                <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+                <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
                   <img
                     src="/atividades-campo/ins.svg"
                     alt="Inspeção Especial"
-                    class="absolute inset-0 h-full w-full object-contain"
+                    class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
                     loading="lazy"
                   />
                 </div>
@@ -83,11 +83,11 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-                <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+                <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
                   <img
                     src="/atividades-campo/laudo.svg"
                     alt="Laudos Técnicos"
-                    class="absolute inset-0 h-full w-full object-contain"
+                    class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
                     loading="lazy"
                   />
                 </div>
@@ -104,11 +104,11 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-                <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+                <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
                   <img
                     src="/atividades-campo/com.svg"
                     alt="Comissionamento"
-                    class="absolute inset-0 h-full w-full object-contain"
+                    class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
                     loading="lazy"
                   />
                 </div>
@@ -123,11 +123,11 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-                <div class="relative h-48 -mt-6 -mx-6 mb-4 overflow-hidden bg-muted/20">
+                <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
                   <img
                     src="/atividades-campo/suporte.svg"
                     alt="Suporte Técnico"
-                    class="absolute inset-0 h-full w-full object-contain"
+                    class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
                     loading="lazy"
                   />
                 </div>
