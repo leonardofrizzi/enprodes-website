@@ -64,7 +64,8 @@ const services = [
   {
     slug: 'engenharia-proprietario',
     title: 'Engenharia de Proprietário',
-    description: 'Consultoria técnica especializada representando os interesses do proprietário, com gestão de projetos, análise técnica, fiscalização e validação de soluções de engenharia.'
+    description: 'Consultoria técnica especializada representando os interesses do proprietário, com gestão de projetos, análise técnica, fiscalização e validação de soluções de engenharia.',
+    image: '/engprop.webp'
   },
   {
     slug: 'projetos-engenharia',
