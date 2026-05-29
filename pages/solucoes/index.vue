@@ -82,12 +82,14 @@ const services = [
   {
     slug: 'documentacao-treinamentos',
     title: 'Documentação de Segurança e Treinamentos',
-    description: 'Elaboração de documentação técnica de segurança, análises de risco, planos de emergência e programas de capacitação operacional para equipes técnicas.'
+    description: 'Elaboração de documentação técnica de segurança, análises de risco, planos de emergência e programas de capacitação operacional para equipes técnicas.',
+    image: '/documentacao/det.webp'
   },
   {
     slug: 'manuais-procedimentos',
     title: 'Manuais e Procedimentos de Operação e Manutenção',
-    description: 'Desenvolvimento de manuais técnicos, procedimentos operacionais padrão (POPs), rotinas de manutenção preventiva e corretiva para sistemas de segurança.'
+    description: 'Desenvolvimento de manuais técnicos, procedimentos operacionais padrão (POPs), rotinas de manutenção preventiva e corretiva para sistemas de segurança.',
+    image: '/manuais/manuais.webp'
   }
 ]
 

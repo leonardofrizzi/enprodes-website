@@ -11,8 +11,13 @@
           </div>
 
           <div class="mb-24">
-            <div class="relative h-96 rounded-2xl bg-muted/20 border flex items-center justify-center mb-12">
-              <p class="text-muted-foreground font-light">Imagem: Documentação de Segurança e Treinamentos Overview</p>
+            <div class="relative h-96 rounded-2xl border overflow-hidden mb-12">
+              <img
+                src="/documentacao/det.webp"
+                alt="Documentação de Segurança e Treinamentos - Enprodes"
+                class="absolute inset-0 h-full w-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
 
@@ -21,8 +26,13 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-                <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
-                  <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+                <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
+                  <img
+                    src="/documentacao/psf.svg"
+                    alt="Plano de Gestão da Segurança"
+                    class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
+                    loading="lazy"
+                  />
                 </div>
                 <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Plano de Gestão da Segurança</h2>
                 <p class="text-muted-foreground font-light leading-relaxed text-sm">
@@ -35,8 +45,13 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-                <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
-                  <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+                <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
+                  <img
+                    src="/documentacao/pre.svg"
+                    alt="Plano de Resposta a Emergências"
+                    class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
+                    loading="lazy"
+                  />
                 </div>
                 <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Plano de Resposta a Emergências</h2>
                 <p class="text-muted-foreground font-light leading-relaxed text-sm">
@@ -49,8 +64,13 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-                <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
-                  <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+                <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
+                  <img
+                    src="/documentacao/arc.svg"
+                    alt="Análise de Risco e Cenários"
+                    class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
+                    loading="lazy"
+                  />
                 </div>
                 <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Análise de Risco e Cenários</h2>
                 <p class="text-muted-foreground font-light leading-relaxed text-sm">
@@ -63,8 +83,13 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-                <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
-                  <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+                <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
+                  <img
+                    src="/documentacao/pco.svg"
+                    alt="Plano Conceitual de Operações"
+                    class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
+                    loading="lazy"
+                  />
                 </div>
                 <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Plano Conceitual de Operações</h2>
                 <p class="text-muted-foreground font-light leading-relaxed text-sm">
@@ -77,8 +102,13 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-                <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
-                  <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+                <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
+                  <img
+                    src="/documentacao/to.svg"
+                    alt="Treinamentos Operacionais"
+                    class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
+                    loading="lazy"
+                  />
                 </div>
                 <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Treinamentos Operacionais</h2>
                 <p class="text-muted-foreground font-light leading-relaxed text-sm">
@@ -91,8 +121,13 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-                <div class="relative h-48 rounded-xl bg-muted/20 border flex items-center justify-center mb-4">
-                  <p class="text-sm text-muted-foreground font-light">Imagem aqui</p>
+                <div class="relative h-48 mb-4 overflow-hidden bg-muted/20 rounded-xl">
+                  <img
+                    src="/documentacao/las.svg"
+                    alt="Documentação Técnica"
+                    class="absolute inset-8 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-contain"
+                    loading="lazy"
+                  />
                 </div>
                 <h2 class="text-xl font-light mb-3 group-hover:text-enprodes-blue transition-colors duration-300">Documentação Técnica</h2>
                 <p class="text-muted-foreground font-light leading-relaxed text-sm">
