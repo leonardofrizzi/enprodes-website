@@ -10,7 +10,7 @@
             </p>
           </div>
 
-          <div v-reveal-stagger="{ stagger: 0.1 }" class="grid md:grid-cols-2 gap-12 mb-24">
+          <div v-reveal-stagger="{ stagger: 0.1 }" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
             <div
               v-for="service in services"
               :key="service.slug"
@@ -19,12 +19,12 @@
               <div class="absolute inset-0 bg-gradient-to-br from-enprodes-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-enprodes-blue/5 rounded-full blur-2xl group-hover:bg-enprodes-blue/10 transition-all duration-300"></div>
               <div class="relative z-10">
-              <div class="relative h-48 -mt-6 -mx-6 mb-6 overflow-hidden bg-muted/20 flex items-center justify-center">
+              <div class="relative h-[300px] -mt-6 -mx-6 mb-6 overflow-hidden bg-muted/20 flex items-center justify-center">
                 <img
                   v-if="service.image"
                   :src="service.image"
                   :alt="service.title"
-                  class="absolute inset-0 h-full w-full object-cover"
+                  :class="['absolute inset-0 h-full w-full object-cover', service.imagePosition]"
                   loading="lazy"
                 />
                 <p v-else class="text-sm text-muted-foreground font-light">Imagem aqui</p>
@@ -60,12 +60,13 @@
 <script setup lang="ts">
 import { Button } from '@/components/ui/button'
 
-const services = [
+const services: { slug: string; title: string; description: string; image: string; imagePosition?: string }[] = [
   {
     slug: 'engenharia-proprietario',
     title: 'Engenharia de Proprietário',
     description: 'Consultoria técnica especializada representando os interesses do proprietário, com gestão de projetos, análise técnica, fiscalização e validação de soluções de engenharia.',
-    image: '/engprop.webp'
+    image: '/engprop.webp',
+    imagePosition: 'object-left'
   },
   {
     slug: 'projetos-engenharia',

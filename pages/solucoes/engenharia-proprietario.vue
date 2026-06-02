@@ -11,7 +11,7 @@
           </div>
 
           <div class="mb-24">
-            <div class="relative h-96 rounded-2xl border overflow-hidden mb-12">
+            <div class="relative h-[500px] rounded-2xl border overflow-hidden mb-12">
               <img
                 src="/engprop.webp"
                 alt="Engenharia de Proprietário - Enprodes"

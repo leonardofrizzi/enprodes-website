@@ -11,7 +11,7 @@
           </div>
 
           <div class="mb-24">
-            <div v-reveal class="relative h-96 rounded-2xl border overflow-hidden mb-12">
+            <div v-reveal class="relative h-[700px] rounded-2xl border overflow-hidden mb-12">
               <img
                 src="/projeng.webp"
                 alt="Projetos de Engenharia - Enprodes"
